@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientist Technologies — Innovate with Built-in AI | Since 2016</title>
+    <meta name="description"
+        content="Scientist Technologies has been pioneering AI solutions since 2016. We build smarter futures with machine learning, NLP, computer vision, and ethical AI deployment.">
+    <meta name="keywords"
+        content="AI, artificial intelligence, machine learning, NLP, computer vision, Scientist Technologies, creative AI solutions">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scientisttechnologies.uk/">
+    <meta property="og:title" content="Scientist Technologies — Innovate with Built-in AI">
+    <meta property="og:description"
+        content="Pioneering AI solutions since 2016. We build smarter futures with machine learning, NLP, computer vision, and ethical AI deployment.">
+    <meta property="og:image" content="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://scientisttechnologies.uk/">
+    <meta property="twitter:title" content="Scientist Technologies — Innovate with Built-in AI">
+    <meta property="twitter:description"
+        content="Pioneering AI solutions since 2016. Building a smarter future, one algorithm at a time.">
+    <meta property="twitter:image" content="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/avif" href="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="navLogo">
+                <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo" class="logo-img">
+                <!-- <span class="logo-text">Scientist</span> -->
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#services" class="nav-link" data-section="services">Services</a>
+                <a href="#approach" class="nav-link" data-section="approach">Approach</a>
+                <a href="#team" class="nav-link" data-section="team">Team</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-icon sun">☀️</span>
+                        <span class="theme-toggle-icon moon">🌙</span>
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+                <button class="nav-cta" id="navCta">Get Started</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#services" class="mobile-nav-link">Services</a>
+            <a href="#approach" class="mobile-nav-link">Approach</a>
+            <a href="#team" class="mobile-nav-link">Team</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-main-flex">
+                    <div class="hero-video-container animate-on-scroll">
+                        <video autoplay muted loop playsinline class="hero-logo-animation">
+                            <source src="Logo_Animation_Video_Creation.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="hero-text-container">
+                        <div class="hero-badge animate-on-scroll">
+                            <span class="badge-dot"></span>
+                            Pioneering AI Since 2016
+                        </div>
+                        <h1 class="hero-title animate-on-scroll">
+                            <span class="title-line">Innovate with</span>
+                            <span class="title-line gradient-text">Built-in AI.</span>
+                            <span class="title-line">Build a Smarter</span>
+                            <span class="title-line gradient-text">Future.</span>
+                        </h1>
+                        <p class="hero-subtitle animate-on-scroll">
+                            Scientist Technologies — Transforming industries with cutting-edge artificial intelligence,
+                            machine learning, and data-driven solutions since 2016.
+                        </p>
+                    </div>
+                </div>
+                <div class="hero-cta-group animate-on-scroll">
+                    <a href="#services" class="btn btn-primary" id="heroCtaPrimary">
+                        <span>Explore Solutions</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                    <a href="#about" class="btn btn-ghost" id="heroCtaSecondary">
+                        <span>Learn More</span>
+                    </a>
+                </div>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="9">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Years in AI</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="150">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Global Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- Marquee Ticker -->
+        <section class="marquee-section">
+            <div class="marquee-track">
+                <div class="marquee-content">
+                    <span class="marquee-item">Machine Learning</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Deep Learning</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Natural Language Processing</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Computer Vision</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Neural Networks</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Predictive Analytics</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">AI Ethics</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Generative AI</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Machine Learning</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Deep Learning</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Natural Language Processing</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Computer Vision</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Neural Networks</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Predictive Analytics</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">AI Ethics</span>
+                    <span class="marquee-dot">◆</span>
+                    <span class="marquee-item">Generative AI</span>
+                    <span class="marquee-dot">◆</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Our Approach -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">Our Approach to <span class="gradient-text">AI Innovation</span></h2>
+                    <p class="section-subtitle">We combine deep domain expertise with cutting-edge AI research to
+                        deliver transformative solutions.</p>
+                </div>
+                <div class="approach-grid">
+                    <div class="approach-card glass-card animate-on-scroll" id="approachCard1">
+                        <div class="approach-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" stroke="url(#grad1)" stroke-width="2" />
+                                <path
+                                    d="M16 24C16 19.5817 19.5817 16 24 16C28.4183 16 32 19.5817 32 24C32 28.4183 28.4183 32 24 32"
+                                    stroke="url(#grad1)" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="24" cy="24" r="4" fill="url(#grad1)" />
+                                <defs>
+                                    <linearGradient id="grad1" x1="4" y1="4" x2="44" y2="44">
+                                        <stop stop-color="#00F5D4" />
+                                        <stop offset="1" stop-color="#7B61FF" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>Problem Solvers, Future Shapers</h3>
+                        <p>Leveraging cutting-edge AI to tackle complex challenges and create new opportunities for
+                            businesses worldwide.</p>
+                    </div>
+                    <div class="approach-card glass-card animate-on-scroll" id="approachCard2">
+                        <div class="approach-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8" y="8" width="32" height="32" rx="8" stroke="url(#grad2)" stroke-width="2" />
+                                <path d="M16 28L22 22L26 26L32 20" stroke="url(#grad2)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="32" cy="20" r="3" fill="url(#grad2)" />
+                                <defs>
+                                    <linearGradient id="grad2" x1="8" y1="8" x2="40" y2="40">
+                                        <stop stop-color="#FF6B6B" />
+                                        <stop offset="1" stop-color="#FFE66D" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>Data-Driven Excellence</h3>
+                        <p>Combining cutting-edge AI to solve core business challenges and drive measurable results.</p>
+                    </div>
+                    <div class="approach-card glass-card animate-on-scroll" id="approachCard3">
+                        <div class="approach-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 8L38 16V32L24 40L10 32V16L24 8Z" stroke="url(#grad3)" stroke-width="2" />
+                                <path d="M24 8V40M10 16L38 32M38 16L10 32" stroke="url(#grad3)" stroke-width="1"
+                                    opacity="0.5" />
+                                <circle cx="24" cy="24" r="6" stroke="url(#grad3)" stroke-width="2" />
+                                <defs>
+                                    <linearGradient id="grad3" x1="10" y1="8" x2="38" y2="40">
+                                        <stop stop-color="#00B4D8" />
+                                        <stop offset="1" stop-color="#90E0EF" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h3>Scalable AI Systems</h3>
+                        <p>Building robust, production-ready AI systems that grow with your business needs and adapt to
+                            change.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">Our Expertise</span>
+                    <h2 class="section-title">AI Solutions That <span class="gradient-text">Drive Innovation</span></h2>
+                    <p class="section-subtitle">Comprehensive AI services tailored to transform your business and unlock
+                        new possibilities.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll" id="serviceCard1">
+                        <div class="service-card-inner">
+                            <div class="service-number">01</div>
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="20" r="8" stroke="currentColor" stroke-width="2" />
+                                    <circle cx="16" cy="44" r="6" stroke="currentColor" stroke-width="2" />
+                                    <circle cx="48" cy="44" r="6" stroke="currentColor" stroke-width="2" />
+                                    <line x1="32" y1="28" x2="16" y2="38" stroke="currentColor" stroke-width="1.5" />
+                                    <line x1="32" y1="28" x2="48" y2="38" stroke="currentColor" stroke-width="1.5" />
+                                    <line x1="22" y1="44" x2="42" y2="44" stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <h3>Machine Learning & Design</h3>
+                            <p>Pattern recognition and predictive models that learn from data to deliver intelligent
+                                insights and automation.</p>
+                            <a href="#" class="service-link">Learn More →</a>
+                        </div>
+                        <div class="service-glow"></div>
+                    </div>
+                    <div class="service-card animate-on-scroll" id="serviceCard2">
+                        <div class="service-card-inner">
+                            <div class="service-number">02</div>
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="12" y="16" rx="4" width="40" height="28" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <line x1="20" y1="24" x2="36" y2="24" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <line x1="20" y1="30" x2="44" y2="30" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <line x1="20" y1="36" x2="32" y2="36" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <h3>Natural Language Processing</h3>
+                            <p>Human understanding and predictive generation — contextual embeddings and linguistic
+                                analysis.</p>
+                            <a href="#" class="service-link">Learn More →</a>
+                        </div>
+                        <div class="service-glow"></div>
+                    </div>
+                    <div class="service-card animate-on-scroll" id="serviceCard3">
+                        <div class="service-card-inner">
+                            <div class="service-number">03</div>
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="32" r="18" stroke="currentColor" stroke-width="2" />
+                                    <circle cx="32" cy="32" r="8" stroke="currentColor" stroke-width="2" />
+                                    <circle cx="32" cy="32" r="3" fill="currentColor" />
+                                    <line x1="32" y1="14" x2="32" y2="8" stroke="currentColor" stroke-width="2" />
+                                    <line x1="32" y1="56" x2="32" y2="50" stroke="currentColor" stroke-width="2" />
+                                    <line x1="14" y1="32" x2="8" y2="32" stroke="currentColor" stroke-width="2" />
+                                    <line x1="56" y1="32" x2="50" y2="32" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h3>Computer Vision & Perception</h3>
+                            <p>Image analysis, video processing, object detection, and real-time visual intelligence
+                                systems.</p>
+                            <a href="#" class="service-link">Learn More →</a>
+                        </div>
+                        <div class="service-glow"></div>
+                    </div>
+                    <div class="service-card animate-on-scroll" id="serviceCard4">
+                        <div class="service-card-inner">
+                            <div class="service-number">04</div>
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 12L52 24V40L32 52L12 40V24L32 12Z" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <path d="M32 12V52" stroke="currentColor" stroke-width="1.5" opacity="0.5" />
+                                    <path d="M12 24L52 40" stroke="currentColor" stroke-width="1.5" opacity="0.5" />
+                                    <path d="M52 24L12 40" stroke="currentColor" stroke-width="1.5" opacity="0.5" />
+                                </svg>
+                            </div>
+                            <h3>Network Vision & Reprocessing</h3>
+                            <p>Real-time network optimization using AI-driven pattern detection and edge computing
+                                frameworks.</p>
+                            <a href="#" class="service-link">Learn More →</a>
+                        </div>
+                        <div class="service-glow"></div>
+                    </div>
+                    <div class="service-card animate-on-scroll" id="serviceCard5">
+                        <div class="service-card-inner">
+                            <div class="service-number">05</div>
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="16" y="12" width="32" height="40" rx="4" stroke="currentColor"
+                                        stroke-width="2" />
+                                    <circle cx="32" cy="28" r="8" stroke="currentColor" stroke-width="2" />
+                                    <path d="M24 44L28 40L32 42L36 38L40 44" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3>Generative AI Solutions</h3>
+                            <p>Cutting-edge generative models for content creation, code synthesis, and creative AI
+                                applications.</p>
+                            <a href="#" class="service-link">Learn More →</a>
+                        </div>
+                        <div class="service-glow"></div>
+                    </div>
+                    <div class="service-card animate-on-scroll" id="serviceCard6">
+                        <div class="service-card-inner">
+                            <div class="service-number">06</div>
+                            <div class="service-icon-wrap">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 16L36 24H44L38 30L40 38L32 34L24 38L26 30L20 24H28L32 16Z"
+                                        stroke="currentColor" stroke-width="2" fill="none" />
+                                    <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2"
+                                        stroke-dasharray="4 4" />
+                                </svg>
+                            </div>
+                            <h3>AI Ethics & Deployment</h3>
+                            <p>Responsible AI practices and scalable deployment strategies that ensure fairness,
+                                transparency, and reliability.</p>
+                            <a href="#" class="service-link">Learn More →</a>
+                        </div>
+                        <div class="service-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Products Section -->
+        <section class="section product-section" id="products">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">Our Products</span>
+                    <h2 class="section-title">Urban <span class="gradient-text">AI</span></h2>
+                    <p class="section-subtitle">Revolutionizing traffic management and urban planning with advanced
+                        computer vision.</p>
+                </div>
+
+                <div class="product-showcase animate-on-scroll">
+                    <!-- Product Info Side -->
+                    <div class="product-info glass-card">
+                        <div class="product-image-wrapper">
+                            <img src="Urban_AI_image.avif" alt="Urban AI Logo" class="product-main-image">
+                        </div>
+                        <div class="product-details">
+                            <h3>Smarter Cities, Better Flow</h3>
+                            <p>Urban AI utilizes state-of-the-art vehicle detection and speed processing to analyze
+                                traffic patterns in real-time, providing actionable insights for smarter city planning.
+                            </p>
+                            <a href="https://www.geturbanai.com/" target="_blank" class="btn btn-primary">
+                                <span>Know More</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Side -->
+                    <div class="product-carousel glass-card" id="urbanAiCarousel">
+                        <div class="carousel-track-container">
+                            <ul class="carousel-track">
+                                <li class="carousel-slide current-slide">
+                                    <div class="video-container"
+                                        style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; background: #000;">
+                                        <video controls class="carousel-content"
+                                            style="max-width: 100%; max-height: 100%;">
+                                            <source src="converted_0002_10-16_processed_video.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                    <div class="slide-caption">Vehicle Detection & Speed Processing</div>
+                                </li>
+                                <li class="carousel-slide">
+                                    <img src="Traffic flow.png" alt="Traffic Flow Analysis" class="carousel-content">
+                                    <div class="slide-caption">Traffic Flow Analysis</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="carousel-button carousel-button--left is-hidden">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="15 18 9 12 15 6" />
+                            </svg>
+                        </button>
+
+                        <button class="carousel-button carousel-button--right">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </button>
+
+                        <div class="carousel-nav">
+                            <button class="carousel-indicator current-slide"></button>
+                            <button class="carousel-indicator"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories / Case Studies -->
+        <section class="section stories-section" id="approach">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">Success Stories</span>
+                    <h2 class="section-title">Proven Results That <span class="gradient-text">Speak Volumes</span></h2>
+                </div>
+                <div class="stories-grid">
+                    <div class="story-card animate-on-scroll" id="storyCard1">
+                        <div class="story-metric">
+                            <span class="story-number" data-count="95">0</span>
+                            <span class="story-suffix">%</span>
+                        </div>
+                        <h3>Prediction Accuracy</h3>
+                        <p>Achieved 95% prediction accuracy for a fortune 500 company's supply chain optimization model.
+                        </p>
+                        <div class="story-tag">Supply Chain AI</div>
+                    </div>
+                    <div class="story-card animate-on-scroll" id="storyCard2">
+                        <div class="story-metric">
+                            <span class="story-number" data-count="40">0</span>
+                            <span class="story-suffix">%</span>
+                        </div>
+                        <h3>Cost Reduction</h3>
+                        <p>Reduced operational costs by 40% through intelligent process automation and predictive
+                            maintenance.</p>
+                        <div class="story-tag">Process Automation</div>
+                    </div>
+                    <div class="story-card animate-on-scroll" id="storyCard3">
+                        <div class="story-metric">
+                            <span class="story-number" data-count="3">0</span>
+                            <span class="story-suffix">x</span>
+                        </div>
+                        <h3>Faster Insights</h3>
+                        <p>Delivered 3x faster data insights with our real-time analytics pipeline for healthcare
+                            diagnostics.</p>
+                        <div class="story-tag">Healthcare AI</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section team-section" id="team">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">Our People</span>
+                    <h2 class="section-title">Meet Our <span class="gradient-text">Brilliant Minds</span></h2>
+                    <p class="section-subtitle">World-class researchers and engineers driving AI innovation.</p>
+                </div>
+                <div class="team-grid">
+                    <!-- Anurag Pyriyadarshi -->
+                    <div class="team-card animate-on-scroll" id="teamCard1">
+                        <div class="team-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-placeholder">
+                                <img src="Anurag_Image.jpg" alt="Anurag Pyriyadarshi" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                        <h3 class="team-name">Anurag Pyriyadarshi</h3>
+                        <p class="team-role">CEO & Founder</p>
+                        <p class="team-bio">Visionary leader driving the future of AI innovation and strategic growth
+                            since 2016.</p>
+                        <div class="team-social">
+                            <a href="https://www.linkedin.com/in/anurag-priyadarshi/" target="_blank"
+                                aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Syed Moula -->
+                    <div class="team-card animate-on-scroll" id="teamCard2">
+                        <div class="team-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-placeholder">
+                                <img src="Syed_Image.jpg" alt="Syed Moula" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                        <h3 class="team-name">Syed Moula</h3>
+                        <p class="team-role">Lead AI Engineer</p>
+                        <p class="team-bio">Architecting advanced AI solutions and leading our engineering technical
+                            strategy.</p>
+                        <div class="team-social">
+                            <a href="https://www.linkedin.com/in/syed-moula/" target="_blank" aria-label="LinkedIn"
+                                class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Aditi Paul -->
+                    <div class="team-card animate-on-scroll" id="teamCard3">
+                        <div class="team-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-placeholder">
+                                <img src="Aditi_Image.jpg" alt="Aditi Paul" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                        <h3 class="team-name">Aditi Paul</h3>
+                        <p class="team-role">HR Manager</p>
+                        <p class="team-bio">Fostering a culture of innovation and building our world-class team of
+                            experts.</p>
+                        <div class="team-social">
+                            <a href="https://www.linkedin.com/in/aditi-paul-10002a196/" target="_blank"
+                                aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info animate-on-scroll">
+                        <span class="section-tag">Get In Touch</span>
+                        <h2 class="section-title">Let's Build the <span class="gradient-text">Future Together</span>
+                        </h2>
+                        <p class="contact-desc">Ready to transform your business with AI? Let's talk about how Scientist
+                            Technologies can help.</p>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                        <circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p>Scientist Technologies<br>AI Innovation Hub, India</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                        <polyline points="22,6 12,13 2,6" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>hello@scientisttechnologies.uk</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-social-links">
+                            <a href="#" aria-label="LinkedIn" class="footer-social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Twitter" class="footer-social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="GitHub" class="footer-social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="Facebook" class="footer-social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper animate-on-scroll">
+                        <form class="contact-form glass-card" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="contactName" placeholder=" " required>
+                                <label for="contactName">Name</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contactEmail" placeholder=" " required>
+                                <label for="contactEmail">Email</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="contactSubject" placeholder=" ">
+                                <label for="contactSubject">Subject</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="contactMessage" rows="4" placeholder=" " required></textarea>
+                                <label for="contactMessage">Message</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full" id="submitContact">
+                                <span>Send Message</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13" />
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Map Section -->
+                <div class="map-section animate-on-scroll" id="mapSection">
+                    <div class="map-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <span>Find Us on the Map</span>
+                    </div>
+                    <div class="map-container">
+                        <iframe id="contactMap"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1944.38!2d77.60024652633318!3d12.912832831618095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!1s0x0%3A0x0!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Scientist Technologies - Awfis Mantri Commerce, Bengaluru">
+                        </iframe>
+                        <!-- Map Pin Marker -->
+                        <div class="map-pin-marker" id="mapPinMarker">
+                            <div class="map-pin-pulse"></div>
+                            <svg class="map-pin-icon" width="40" height="52" viewBox="0 0 40 52" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 0C8.954 0 0 8.954 0 20c0 14 20 32 20 32s20-18 20-32C40 8.954 31.046 0 20 0z"
+                                    fill="url(#pinGradientMain)" />
+                                <circle cx="20" cy="20" r="9" fill="#222222" />
+                                <circle cx="20" cy="20" r="5" fill="white" />
+                                <defs>
+                                    <linearGradient id="pinGradientMain" x1="0" y1="0" x2="40" y2="52">
+                                        <stop stop-color="#fed16b" />
+                                        <stop offset="1" stop-color="#E6BC5C" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <!-- Map Overlay Card -->
+                        <div class="map-overlay-card glass-card">
+                            <div class="map-overlay-pin">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="url(#mapPinGrad)"
+                                        stroke="rgba(255,255,255,0.3)" stroke-width="1" />
+                                    <circle cx="12" cy="10" r="3" fill="white" />
+                                    <defs>
+                                        <linearGradient id="mapPinGrad" x1="3" y1="1" x2="21" y2="23">
+                                            <stop stop-color="#fed16b" />
+                                            <stop offset="1" stop-color="#E6BC5C" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h4 class="map-overlay-title">Scientist Technologies</h4>
+                            <p class="map-overlay-address">7th Floor, Mantri Commerce<br>Bannerghatta Road, BTM
+                                Layout<br>Bengaluru, Karnataka 560076</p>
+                            <a href="https://www.google.com/maps?q=12.912832831618095,77.60024652633318" target="_blank"
+                                rel="noopener noreferrer" class="map-overlay-link">
+                                <span>Get Directions</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="7" y1="17" x2="17" y2="7" />
+                                    <polyline points="7 7 17 7 17 17" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo"
+                            class="logo-img">
+                        <!-- <span class="logo-text">Scientist</span> -->
+                    </a>
+                    <p class="footer-tagline">Pioneering AI solutions since 2016. Building a smarter future, one
+                        algorithm at a time.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Solutions</h4>
+                        <a href="#">Machine Learning</a>
+                        <a href="#">Natural Language Processing</a>
+                        <a href="#">Computer Vision</a>
+                        <a href="#">AI Deployment</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2016–2026 Scientist Technologies.uk — All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
