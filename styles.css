@@ -2211,17 +2211,19 @@ button {
 }
 
 .chatbot-toggle {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     background: var(--gradient-primary);
     color: var(--bg-primary);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 32px rgba(254, 209, 107, 0.4);
+    box-shadow: 0 10px 40px rgba(254, 209, 107, 0.4);
     transition: all var(--transition-base);
     position: relative;
+    cursor: pointer;
+    border: none;
 }
 
 .chatbot-toggle:hover {
@@ -2276,19 +2278,23 @@ button {
 /* Chat Window */
 .chat-window-wrapper {
     position: absolute;
-    bottom: 80px;
+    bottom: 85px;
     right: 0;
-    width: 350px;
-    height: 500px;
+    width: 380px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transform: translateY(20px) scale(0.9);
+    transform: translateY(30px) scale(0.9);
     opacity: 0;
     visibility: hidden;
-    transition: all 0.4s var(--ease-out-expo);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     transform-origin: bottom right;
     pointer-events: none;
+    box-shadow: var(--shadow-lg), 0 0 0 1px var(--border-light);
+    background: rgba(44, 44, 44, 0.85);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
 }
 
 .chatbot-container.active .chat-window-wrapper {
@@ -2370,13 +2376,15 @@ button {
 .chat-msg.bot .msg-content {
     background: var(--bg-tertiary);
     border-bottom-left-radius: 4px;
+    border: 1px solid var(--border-subtle);
 }
 
 .chat-msg.user .msg-content {
     background: var(--gradient-primary);
-    color: var(--bg-primary);
+    color: #1a1a1a;
     border-bottom-right-radius: 4px;
-    font-weight: 500;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(254, 209, 107, 0.2);
 }
 
 .msg-time {

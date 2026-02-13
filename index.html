@@ -821,6 +821,58 @@
         </div>
     </footer>
 
+    <!-- AI Chatbot -->
+    <div class="chatbot-container" id="chatbot">
+        <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open AI Assistant">
+            <div class="chatbot-pulse"></div>
+            <svg class="chat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+            </svg>
+            <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+
+        <div class="chat-window-wrapper glass-card">
+            <div class="chat-header">
+                <div class="bot-avatar">
+                    <div class="online-indicator"></div>
+                </div>
+                <div class="bot-info">
+                    <h3>Scientist AI</h3>
+                    <p>Always Online</p>
+                </div>
+            </div>
+
+            <div class="chat-body" id="chatBody">
+                <div class="chat-msg bot">
+                    <div class="msg-content">
+                        Hello! 👋 I'm your AI assistant. How can I help you innovate today?
+                    </div>
+                    <span class="msg-time">Just now</span>
+                </div>
+            </div>
+
+            <div class="chat-footer">
+                <div class="chat-suggestions">
+                    <button class="suggestion-chip">Our Services</button>
+                    <button class="suggestion-chip">Urban AI</button>
+                    <button class="suggestion-chip">Contact Us</button>
+                </div>
+                <form class="chat-input-area" id="chatForm">
+                    <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off">
+                    <button type="submit" class="send-btn" aria-label="Send message">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13" />
+                            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 

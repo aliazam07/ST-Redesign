@@ -62,9 +62,8 @@ function initThemeToggle() {
     const root = document.documentElement;
     const storedTheme = localStorage.getItem('theme');
 
-    // Check system preference if no stored theme
-    const systemTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-    const currentTheme = storedTheme || systemTheme;
+    // Default to dark theme if no stored preference
+    const currentTheme = storedTheme || 'dark';
 
     // Apply initial theme
     if (currentTheme === 'light') {
@@ -598,6 +597,7 @@ function initCarousel() {
 /* ================================================
    AI CHATBOT LOGIC
    ================================================ */
+// Add to the main DOMContentLoaded listener or call it directly
 function initChatbot() {
     const chatbot = document.getElementById('chatbot');
     const toggle = document.getElementById('chatbotToggle');
@@ -616,7 +616,7 @@ function initChatbot() {
         }
     });
 
-    // Close on outside click
+    // Close on outside click (optional but premium feel)
     document.addEventListener('click', (e) => {
         if (!chatbot.contains(e.target) && chatbot.classList.contains('active')) {
             chatbot.classList.remove('active');
@@ -628,30 +628,42 @@ function initChatbot() {
         e.preventDefault();
         const msg = input.value.trim();
         if (msg) {
-            addMessage(msg, 'user');
+            handleUserMessage(msg);
             input.value = '';
-
-            // AI Response delay
-            setTimeout(() => {
-                respondTo(msg);
-            }, 800);
         }
     });
 
     // Handle Suggestions
     suggestions.forEach(chip => {
-        chip.addEventListener('click', () => {
+        chip.addEventListener('click', (e) => {
+            e.stopPropagation();
             const text = chip.textContent;
-            addMessage(text, 'user');
-            setTimeout(() => respondTo(text), 800);
+            handleUserMessage(text);
         });
     });
+
+    function handleUserMessage(text) {
+        addMessage(text, 'user');
+
+        // Show "thinking" state
+        const thinkingDiv = document.createElement('div');
+        thinkingDiv.className = 'chat-msg bot thinking';
+        thinkingDiv.innerHTML = '<div class="msg-content">...</div>';
+        body.appendChild(thinkingDiv);
+        body.scrollTop = body.scrollHeight;
+
+        // AI Response delay
+        setTimeout(() => {
+            thinkingDiv.remove();
+            respondTo(text);
+        }, 1200);
+    }
 
     function addMessage(text, side) {
         const msgDiv = document.createElement('div');
         msgDiv.className = 'chat-msg ' + side;
         const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        msgDiv.innerHTML = '<div class="msg-content">' + text + '</div><span class="msg-time">' + time + '</span>';
+        msgDiv.innerHTML = `<div class="msg-content">${text}</div><span class="msg-time">${time}</span>`;
         body.appendChild(msgDiv);
         body.scrollTop = body.scrollHeight;
     }
@@ -660,19 +672,20 @@ function initChatbot() {
         let response = "That's an interesting question! Let me check how Scientist Technologies can help with that.";
 
         const text = msg.toLowerCase();
-        if (text.includes('ml') || text.includes('learning')) {
-            response = "Our Machine Learning models range from predictive analytics to deep learning patterns for design automation.";
+        if (text.includes('ml') || text.includes('learning') || text.includes('services')) {
+            response = "Our Machine Learning models range from predictive analytics to deep learning patterns for design automation. Would you like to see our case studies?";
         } else if (text.includes('urban')) {
-            response = "Urban AI is our flagship traffic management product. It uses real-time computer vision to optimize city flow.";
+            response = "Urban AI is our flagship traffic management product. It uses real-time computer vision to optimize city flow. You can find it in the products section above!";
         } else if (text.includes('contact') || text.includes('hi') || text.includes('hello')) {
-            response = "Hello! I'm the Scientist AI assistant. You can contact our team at hello@scientisttechnologies.uk or via the form above.";
+            response = "Hello! I'm the Scientist AI assistant. You can contact our team at hello@scientisttechnologies.uk or via the contact form on this page.";
         } else if (text.includes('price') || text.includes('cost')) {
             response = "Every project is unique. Let's schedule a call to discuss your specific requirements and provide a tailored quote.";
+        } else if (text.includes('who') || text.includes('team')) {
+            response = "We are a team of world-class researchers and engineers led by our founder Anurag Pyriyadarshi. Check out the 'Brilliant Minds' section!";
         }
 
         addMessage(response, 'bot');
     }
 }
 
-// Add to the main DOMContentLoaded listener or call it directly
 initChatbot();
