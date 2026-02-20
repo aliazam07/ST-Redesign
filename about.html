@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Scientist Technologies</title>
+    <meta name="description"
+        content="Learn about Scientist Technologies' journey since 2016. Discover our mission, values, and the team pioneering AI innovation.">
+    <meta name="keywords"
+        content="AI company, Scientist Technologies about, AI innovation, machine learning company, AI solutions">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scientisttechnologies.uk/about">
+    <meta property="og:title" content="About Us — Scientist Technologies">
+    <meta property="og:description"
+        content="Learn about Scientist Technologies' journey since 2016. Pioneering AI innovation with world-class expertise.">
+    <meta property="og:image" content="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://scientisttechnologies.uk/about">
+    <meta property="twitter:title" content="About Us — Scientist Technologies">
+    <meta property="twitter:description"
+        content="Learn about Scientist Technologies' journey since 2016.">
+    <meta property="twitter:image" content="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/avif" href="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <!-- Leaflet CSS for Interactive Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Leaflet JS for Interactive Maps -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" id="navLogo">
+                <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo" class="logo-img">
+            </a>
+            <nav class="nav-links" id="navLinks">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link active">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="team.html" class="nav-link">Team</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-icon sun">☀️</span>
+                        <span class="theme-toggle-icon moon">🌙</span>
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+                <button class="nav-cta" id="navCta">Get Started</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="products.html" class="mobile-nav-link">Products</a>
+            <a href="team.html" class="mobile-nav-link">Team</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero team-hero" id="about-hero">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="breadcrumb animate-on-scroll">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">→</span>
+                    <span>About Us</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="title-line">Pioneering AI</span>
+                    <span class="title-line gradient-text">Innovation</span>
+                    <span class="title-line">Since 2016</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    Transforming industries with cutting-edge artificial intelligence, machine learning, and data-driven solutions.
+                </p>
+            </div>
+        </section>
+
+        <!-- CEO's Journey Section -->
+        <section class="section" id="ceo-journey">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">The <span class="gradient-text">Journey</span></h2>
+                    <p class="section-subtitle">From vision to reality - How Scientist Technologies came to be</p>
+                </div>
+
+                <div class="ceo-journey-content">
+                    <!-- Video Section -->
+                    <div class="ceo-video-container glass-card animate-on-scroll">
+                        <div class="video-placeholder">
+                            <div class="video-wrapper">
+                                <!-- Placeholder for CEO video -->
+                                <div class="video-thumb">
+                                    <img src="Anurag_Image.jpg" alt="Anurag Pyriyadarshi - CEO" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                                    <div class="play-button">
+                                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                            <circle cx="32" cy="32" r="32" fill="rgba(254, 209, 107, 0.2)"/>
+                                            <path d="M26 20L44 32L26 44V20Z" fill="#fed16b"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="video-caption">Message from our CEO, Anurag Pyriyadarshi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Content -->
+                    <div class="ceo-story-text animate-on-scroll">
+                        <h3>Why We Started</h3>
+                        <p>In 2016, we saw a gap in the market - businesses struggling to harness the true power of artificial intelligence. We founded Scientist Technologies with a simple mission: make AI accessible, practical, and transformative for organizations of all sizes.</p>
+                        
+                        <h3>Early Challenges</h3>
+                        <p>The journey wasn't easy. We faced skepticism about AI's practical applications, technical hurdles in deploying complex models, and the challenge of building a team that could bridge the gap between cutting-edge research and real-world business needs.</p>
+                        
+                        <h3>Our AI Philosophy</h3>
+                        <p>We believe AI should augment human intelligence, not replace it. Our approach focuses on creating solutions that empower teams, enhance decision-making, and drive measurable business outcomes while maintaining ethical standards and transparency.</p>
+                        
+                        <h3>Future Vision</h3>
+                        <p>Looking ahead, we're committed to pushing the boundaries of what's possible with AI. From advanced natural language processing to computer vision and beyond, we're building the future of intelligent systems that will shape industries for decades to come.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Timeline Section -->
+        <section class="section timeline-section" id="timeline">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Company <span class="gradient-text">Timeline</span></h2>
+                    <p class="section-subtitle">A decade of innovation, growth, and impact</p>
+                </div>
+
+                <div class="horizontal-timeline">
+                    <!-- Timeline Item 1: 2016 -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-year-wrapper">
+                            <span class="timeline-year">2016</span>
+                        </div>
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content-card">
+                            <h3>The Beginning</h3>
+                            <p>Scientist Technologies founded with a vision to democratize AI. Launched our first machine learning projects.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: 2017-2019 -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-year-wrapper">
+                            <span class="timeline-year">2017-2019</span>
+                        </div>
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content-card">
+                            <h3>Rapid Growth</h3>
+                            <p>Major client acquisitions across multiple industries. Expanded service offerings to NLP and computer vision.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: 2020-2022 -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-year-wrapper">
+                            <span class="timeline-year">2020-2022</span>
+                        </div>
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content-card">
+                            <h3>Innovation & Expansion</h3>
+                            <p>Pioneered new AI domains including generative AI and edge computing. 100+ enterprise clients.</p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4: 2023-2026 -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-year-wrapper">
+                            <span class="timeline-year">2023-2026</span>
+                        </div>
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content-card">
+                            <h3>Leading the Future</h3>
+                            <p>Building next-generation intelligent systems that will define the future of technology.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values & Mission Section -->
+        <section class="section values-section" id="values">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">What <span class="gradient-text">Drives Us</span></h2>
+                    <p class="section-subtitle">The principles that guide everything we do</p>
+                </div>
+
+                <div class="values-grid">
+                    <!-- Innovation -->
+                    <div class="value-card glass-card animate-on-scroll" id="value-innovation">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 12V20M32 44V52M12 32H20M44 32H52" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="32" cy="32" r="8" fill="currentColor" opacity="0.3"/>
+                            </svg>
+                            <h3>Innovation</h3>
+                        </div>
+                        
+                        <p>Pushing boundaries in AI technology. We constantly explore new frontiers, experiment with cutting-edge techniques, and challenge conventional thinking to deliver breakthrough solutions.</p>
+                        <ul class="value-details">
+                            <li>Continuous R&D investment</li>
+                            <li>Collaboration with research institutions</li>
+                            <li>Early adoption of emerging technologies</li>
+                        </ul>
+                    </div>
+
+                    <!-- Excellence -->
+                    <div class="value-card glass-card animate-on-scroll" id="value-excellence">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M32 8L38 26H56L42 38L48 56L32 44L16 56L22 38L8 26H26L32 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                                <circle cx="32" cy="32" r="6" fill="currentColor" opacity="0.3"/>
+                            </svg>
+                            <h3>Excellence</h3>
+                        </div>
+                        
+                        <p>Delivering world-class solutions. Every project receives our full commitment to quality, precision, and outstanding results that exceed expectations.</p>
+                        <ul class="value-details">
+                            <li>Rigorous quality assurance</li>
+                            <li>Expert team of AI specialists</li>
+                            <li>Best practices and methodologies</li>
+                        </ul>
+                    </div>
+
+                    <!-- Partnership -->
+                    <div class="value-card glass-card animate-on-scroll" id="value-partnership">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="44" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 48C12 40 16 36 20 36C24 36 28 40 28 48" stroke="currentColor" stroke-width="2"/>
+                                <path d="M36 48C36 40 40 36 44 36C48 36 52 40 52 48" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <h3>Partnership</h3>
+                        </div>
+                        
+                        <p>Collaborative approach with clients. We work alongside your team as trusted partners, ensuring alignment with your goals and fostering long-term relationships.</p>
+                        <ul class="value-details">
+                            <li>Client-centric methodology</li>
+                            <li>Transparent communication</li>
+                            <li>Knowledge transfer and training</li>
+                        </ul>
+                    </div>
+
+                    <!-- Impact -->
+                    <div class="value-card glass-card animate-on-scroll" id="value-impact">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 40L24 32L32 36L40 28L48 32" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="48" cy="32" r="4" fill="currentColor"/>
+                                <rect x="8" y="8" width="48" height="48" rx="4" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <h3>Impact</h3>
+                        </div>
+                        
+                        <p>Creating measurable business value through AI. We focus on delivering tangible results that drive growth, efficiency, and competitive advantage for our clients.</p>
+                        <ul class="value-details">
+                            <li>ROI-focused solutions</li>
+                            <li>Performance metrics and tracking</li>
+                            <li>Scalable implementations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Approach Sections -->
+        <section class="section approach-details-section" id="approach-details">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">How We <span class="gradient-text">Work</span></h2>
+                    <p class="section-subtitle">Deep dive into our methodology and philosophy</p>
+                </div>
+
+                <div class="approach-details-stack">
+                    <!-- Problem Solvers -->
+                    <div class="approach-detail glass-card animate-on-scroll" id="problem-solvers">
+                    <div class="approach-detail-header">
+                        <div class="approach-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="20" stroke="url(#grad1)" stroke-width="2" />
+                                <path
+                                    d="M16 24C16 19.5817 19.5817 16 24 16C28.4183 16 32 19.5817 32 24C32 28.4183 28.4183 32 24 32"
+                                    stroke="url(#grad1)" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="24" cy="24" r="4" fill="url(#grad1)" />
+                                <defs>
+                                    <linearGradient id="grad1" x1="4" y1="4" x2="44" y2="44">
+                                        <stop stop-color="#00F5D4" />
+                                        <stop offset="1" stop-color="#7B61FF" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <h3>Problem Solvers, Future Shapers</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="approach-detail-content">
+                        <p class="lead-text">We don't just implement AI - we solve complex business challenges and create new opportunities for growth.</p>
+                        
+                        <h4>Our Problem-Solving Framework</h4>
+                        <ul>
+                            <li><strong>Deep Discovery:</strong> We start by understanding your business, challenges, and goals at a fundamental level</li>
+                            <li><strong>Strategic Analysis:</strong> Identify where AI can create the most value and impact</li>
+                            <li><strong>Custom Solutions:</strong> Design tailored AI systems that address your specific needs</li>
+                            <li><strong>Iterative Refinement:</strong> Continuously improve and optimize based on real-world performance</li>
+                        </ul>
+
+                        <h4>Industries We Transform</h4>
+                        <div class="industry-tags">
+                            <span class="tag">Smart Cities</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Finance</span>
+                            <span class="tag">Retail</span>
+                            <span class="tag">Manufacturing</span>
+                            <span class="tag">Transportation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data-Driven Excellence -->
+                <div class="approach-detail glass-card animate-on-scroll" id="data-driven">
+                    <div class="approach-detail-header">
+                        <div class="approach-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="8" y="8" width="32" height="32" rx="8" stroke="url(#grad2)" stroke-width="2" />
+                                <path d="M16 28L22 22L26 26L32 20" stroke="url(#grad2)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="32" cy="20" r="3" fill="url(#grad2)" />
+                                <defs>
+                                    <linearGradient id="grad2" x1="8" y1="8" x2="40" y2="40">
+                                        <stop stop-color="#FF6B6B" />
+                                        <stop offset="1" stop-color="#FFE66D" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <h3>Data-Driven Excellence</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="approach-detail-content">
+                        <p class="lead-text">Every decision backed by data, every solution validated by results.</p>
+                        
+                        <h4>Our Data Philosophy</h4>
+                        <ul>
+                            <li><strong>Quality First:</strong> Clean, relevant data is the foundation of effective AI</li>
+                            <li><strong>Ethical Handling:</strong> Privacy, security, and compliance in every project</li>
+                            <li><strong>Actionable Insights:</strong> Transform raw data into strategic business intelligence</li>
+                            <li><strong>Continuous Learning:</strong> Models that improve over time with new data</li>
+                        </ul>
+
+                        <h4>Measurable Outcomes</h4>
+                        <div class="outcome-stats">
+                            <div class="stat-box">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">40%</span>
+                                <span class="stat-label">Avg. Efficiency Gain</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-number">150+</span>
+                                <span class="stat-label">Projects Delivered</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scalable Systems -->
+                <div class="approach-detail glass-card animate-on-scroll" id="scalable-systems">
+                    <div class="approach-detail-header">
+                        <div class="approach-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 8L38 16V32L24 40L10 32V16L24 8Z" stroke="url(#grad3)" stroke-width="2" />
+                                <path d="M24 8V40M10 16L38 32M38 16L10 32" stroke="url(#grad3)" stroke-width="1"
+                                    opacity="0.5" />
+                                <circle cx="24" cy="24" r="6" stroke="url(#grad3)" stroke-width="2" />
+                                <defs>
+                                    <linearGradient id="grad3" x1="10" y1="8" x2="38" y2="40">
+                                        <stop stop-color="#00B4D8" />
+                                        <stop offset="1" stop-color="#90E0EF" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <h3>Scalable AI Systems</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="approach-detail-content">
+                        <p class="lead-text">Built for today, designed for tomorrow. Our AI systems grow with your business.</p>
+                        
+                        <h4>Scalability Principles</h4>
+                        <ul>
+                            <li><strong>Cloud-Native Architecture:</strong> Leverage modern cloud infrastructure for flexibility</li>
+                            <li><strong>Modular Design:</strong> Components that can be updated independently</li>
+                            <li><strong>Performance Optimization:</strong> Efficient algorithms that handle growing data volumes</li>
+                            <li><strong>Future-Proof Technology:</strong> Built on standards that evolve with the industry</li>
+                        </ul>
+
+                        <h4>Deployment Options</h4>
+                        <div class="deployment-options">
+                            <div class="option-card">
+                                <h5>Cloud</h5>
+                                <p>Scalable, managed infrastructure</p>
+                            </div>
+                            <div class="option-card">
+                                <h5>On-Premise</h5>
+                                <p>Full control and security</p>
+                            </div>
+                            <div class="option-card">
+                                <h5>Hybrid</h5>
+                                <p>Best of both worlds</p>
+                            </div>
+                            <div class="option-card">
+                                <h5>Edge</h5>
+                                <p>Real-time processing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo"
+                            class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Pioneering AI solutions since 2016. Building a smarter future, one
+                        algorithm at a time.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Solutions</h4>
+                        <a href="services.html">Machine Learning</a>
+                        <a href="services.html">Natural Language Processing</a>
+                        <a href="services.html">Computer Vision</a>
+                        <a href="services.html">AI Deployment</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="team.html">Team</a>
+                        <a href="#">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2016–2026 Scientist Technologies.uk — All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot (Available on all pages) -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div>
+                    <h4>AI Assistant</h4>
+                    <span class="chatbot-status">Online</span>
+                </div>
+            </div>
+            <div class="chatbot-actions">
+                <button class="chatbot-minimize" id="chatbotMinimize" aria-label="Minimize chat">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 10H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 5L15 15M5 15L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="chatbot-body" id="chatBody">
+            <div class="chat-msg bot">
+                <div class="msg-content">Hello! 👋 I'm here to help you with any questions about our AI services. How can I assist you today?</div>
+                <span class="msg-time">Just now</span>
+            </div>
+            <div class="chat-suggestions">
+                <button class="suggestion-chip">Tell me about your services</button>
+                <button class="suggestion-chip">How can AI help my business?</button>
+                <button class="suggestion-chip">Request a consultation</button>
+            </div>
+        </div>
+        <form class="chatbot-input" id="chatForm">
+            <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off">
+            <button type="submit" aria-label="Send message">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M2 10L18 2L10 18L8 11L2 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
+            <circle cx="12" cy="10" r="1.5" fill="currentColor"/>
+            <circle cx="8" cy="10" r="1.5" fill="currentColor"/>
+            <circle cx="16" cy="10" r="1.5" fill="currentColor"/>
+        </svg>
+        <span class="chatbot-badge">1</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

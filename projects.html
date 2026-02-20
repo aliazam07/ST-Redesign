@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects — Scientist Technologies</title>
+    <meta name="description" content="Explore our portfolio of AI and machine learning projects across healthcare, finance, retail, and more.">
+    
+    <link rel="icon" type="image/avif" href="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" id="navLogo">
+                <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo" class="logo-img">
+            </a>
+            <nav class="nav-links" id="navLinks">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="projects.html" class="nav-link active">Projects</a>
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="team.html" class="nav-link">Team</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-icon sun">☀️</span>
+                        <span class="theme-toggle-icon moon">🌙</span>
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+                <button class="nav-cta" id="navCta">Get Started</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="products.html" class="mobile-nav-link">Products</a>
+            <a href="team.html" class="mobile-nav-link">Team</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero team-hero" id="contact-hero">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="breadcrumb animate-on-scroll">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">→</span>
+                    <span>Projects</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="title-line">Let's Build</span>
+                    <span class="title-line gradient-text">Something Amazing</span>
+                    <span class="title-line">Together</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    Ready to transform your business with AI? Get in touch with our team and let's discuss your project.
+                </p>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="projects-filter-section">
+            <div class="container">
+                <div class="filter-wrapper">
+                    <!-- Dropdown Filters -->
+                    <div class="filter-dropdowns">
+                        <!-- Industry Dropdown -->
+                        <div class="filter-dropdown">
+                            <select id="industryFilter" class="filter-select" data-category="industry">
+                                <option value="all">All Industries</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="finance">Finance</option>
+                                <option value="retail">Retail</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="transportation">Transportation</option>
+                            </select>
+                        </div>
+
+                        <!-- Technology Dropdown -->
+                        <div class="filter-dropdown">
+                            <select id="technologyFilter" class="filter-select" data-category="technology">
+                                <option value="all">All Technologies</option>
+                                <option value="ml">Machine Learning</option>
+                                <option value="nlp">Natural Language Processing</option>
+                                <option value="cv">Computer Vision</option>
+                                <option value="dl">Deep Learning</option>
+                            </select>
+                        </div>
+
+                        <!-- Project Type Dropdown -->
+                        <div class="filter-dropdown">
+                            <select id="typeFilter" class="filter-select" data-category="type">
+                                <option value="all">All Types</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="development">Development</option>
+                                <option value="integration">Integration</option>
+                            </select>
+                        </div>
+
+                        <!-- Clear Filters Button -->
+                        <button class="clear-filters-btn" id="clearFilters">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"/>
+                                <line x1="6" y1="6" x2="18" y2="18"/>
+                            </svg>
+                            Clear Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="projects-grid-section">
+            <div class="container">
+                <div class="projects-grid" id="projectsGrid">
+                    
+                    <!-- Project Card 1 -->
+                    <div class="project-card" data-industry="healthcare" data-technology="cv dl" data-type="development">
+                        <div class="project-image">
+                            <div class="project-image-placeholder">
+                                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="200" fill="#2C2C2C"/>
+                                    <path d="M100 60L120 80H110V120H90V80H80L100 60Z" fill="#fed16b" opacity="0.3"/>
+                                    <circle cx="100" cy="100" r="40" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Diagnostic System</h3>
+                            <p class="project-description">Advanced medical imaging analysis using deep learning for early disease detection with 95% accuracy.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Computer Vision</span>
+                                <span class="project-tag">Deep Learning</span>
+                                <span class="project-tag">Healthcare</span>
+                            </div>
+                            <a href="case-study.html?project=ai-diagnostic" class="project-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card" data-industry="finance" data-technology="ml" data-type="consulting">
+                        <div class="project-image">
+                            <div class="project-image-placeholder">
+                                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="200" fill="#2C2C2C"/>
+                                    <path d="M60 120L80 100L100 110L120 80L140 90" stroke="#fed16b" stroke-width="3" opacity="0.5"/>
+                                    <circle cx="80" cy="100" r="4" fill="#fed16b"/>
+                                    <circle cx="120" cy="80" r="4" fill="#fed16b"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Fraud Detection Engine</h3>
+                            <p class="project-description">Real-time transaction monitoring system that reduced fraud by 78% using advanced ML algorithms.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-tag">Finance</span>
+                                <span class="project-tag">Real-time</span>
+                            </div>
+                            <a href="case-study.html?project=fraud-detection" class="project-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card" data-industry="retail" data-technology="ml nlp" data-type="development">
+                        <div class="project-image">
+                            <div class="project-image-placeholder">
+                                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="200" fill="#2C2C2C"/>
+                                    <rect x="70" y="70" width="60" height="60" rx="8" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                                    <path d="M85 100H115M100 85V115" stroke="#fed16b" stroke-width="2" opacity="0.3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Recommendation System</h3>
+                            <p class="project-description">Personalized product recommendations increasing conversion rates by 45% through behavioral analysis.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-tag">NLP</span>
+                                <span class="project-tag">Retail</span>
+                            </div>
+                            <a href="case-study.html?project=recommendation-system" class="project-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card" data-industry="transportation" data-technology="cv ml" data-type="integration">
+                        <div class="project-image">
+                            <div class="project-image-placeholder">
+                                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="200" fill="#2C2C2C"/>
+                                    <circle cx="100" cy="100" r="30" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                                    <path d="M100 70V100L120 110" stroke="#fed16b" stroke-width="2" opacity="0.7"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Urban Traffic AI</h3>
+                            <p class="project-description">Computer vision system for real-time traffic flow optimization, reducing congestion by 35%.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Computer Vision</span>
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-tag">Smart City</span>
+                            </div>
+                            <a href="case-study.html?project=urban-traffic" class="project-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 -->
+                    <div class="project-card" data-industry="healthcare" data-technology="nlp ml" data-type="consulting">
+                        <div class="project-image">
+                            <div class="project-image-placeholder">
+                                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="200" fill="#2C2C2C"/>
+                                    <rect x="60" y="80" width="80" height="50" rx="4" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                                    <line x1="70" y1="95" x2="110" y2="95" stroke="#fed16b" opacity="0.3"/>
+                                    <line x1="70" y1="105" x2="130" y2="105" stroke="#fed16b" opacity="0.3"/>
+                                    <line x1="70" y1="115" x2="100" y2="115" stroke="#fed16b" opacity="0.3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Medical Records NLP</h3>
+                            <p class="project-description">Automated extraction and analysis of patient data from unstructured medical records using NLP.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">NLP</span>
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-tag">Healthcare</span>
+                            </div>
+                            <a href="case-study.html?project=medical-nlp" class="project-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 6 -->
+                    <div class="project-card" data-industry="manufacturing" data-technology="cv dl" data-type="development">
+                        <div class="project-image">
+                            <div class="project-image-placeholder">
+                                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="200" fill="#2C2C2C"/>
+                                    <rect x="70" y="70" width="60" height="60" rx="4" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                                    <circle cx="100" cy="100" r="15" stroke="#fed16b" stroke-width="2" opacity="0.7"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Quality Control Vision</h3>
+                            <p class="project-description">Automated defect detection system achieving 99.2% accuracy in manufacturing quality control.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Computer Vision</span>
+                                <span class="project-tag">Deep Learning</span>
+                                <span class="project-tag">Manufacturing</span>
+                            </div>
+                            <a href="case-study.html?project=quality-control" class="project-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 7 -->
+                    <div class="project-card" data-industry="finance" data-technology="nlp ml" data-type="development">
+                        <div class="project-image">
+                            <div class="project-image-placeholder">
+                                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="200" fill="#2C2C2C"/>
+                                    <circle cx="100" cy="80" r="20" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                                    <path d="M100 100V130M85 115L100 130L115 115" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sentiment Analysis Platform</h3>
+                            <p class="project-description">Real-time market sentiment analysis from news and social media for investment decision support.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">NLP</span>
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-tag">Finance</span>
+                            </div>
+                            <a href="case-study.html?project=sentiment-analysis" class="project-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 8 -->
+                    <div class="project-card" data-industry="retail" data-technology="cv ml" data-type="integration">
+                        <div class="project-image">
+                            <div class="project-image-placeholder">
+                                <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="200" height="200" fill="#2C2C2C"/>
+                                    <rect x="60" y="60" width="80" height="80" rx="8" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                                    <path d="M80 100L95 115L120 85" stroke="#fed16b" stroke-width="3" opacity="0.7"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Checkout System</h3>
+                            <p class="project-description">Cashier-less checkout using computer vision, reducing wait times by 60% in retail stores.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Computer Vision</span>
+                                <span class="project-tag">Machine Learning</span>
+                                <span class="project-tag">Retail</span>
+                            </div>
+                            <a href="case-study.html?project=smart-checkout" class="project-btn">
+                                <span>View Case Study</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <polyline points="12 5 19 12 12 19"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults" style="display: none;">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <h3>No projects found</h3>
+                    <p>Try adjusting your filters to see more results</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chatbot -->
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-header">
+                <h3>AI Assistant</h3>
+                <div class="chatbot-actions">
+                    <button class="chatbot-minimize" id="chatbotMinimize">−</button>
+                    <button class="chatbot-close" id="chatbotClose">×</button>
+                </div>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input-wrapper">
+                <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your message...">
+                <button class="chatbot-send" id="chatbotSend">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"/>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <button class="chatbot-toggle" id="chatbotToggle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+        </button>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo"
+                            class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Pioneering AI solutions since 2016. Building a smarter future, one
+                        algorithm at a time.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Solutions</h4>
+                        <a href="services.html">Machine Learning</a>
+                        <a href="services.html">Natural Language Processing</a>
+                        <a href="services.html">Computer Vision</a>
+                        <a href="services.html">AI Deployment</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="team.html">Team</a>
+                        <a href="#">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2016–2026 Scientist Technologies.uk — All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Projects Filter Logic with Dropdowns
+        const industryFilter = document.getElementById('industryFilter');
+        const technologyFilter = document.getElementById('technologyFilter');
+        const typeFilter = document.getElementById('typeFilter');
+        const clearFiltersBtn = document.getElementById('clearFilters');
+        const projectCards = document.querySelectorAll('.project-card');
+        const noResults = document.getElementById('noResults');
+
+        let activeFilters = {
+            industry: 'all',
+            technology: 'all',
+            type: 'all'
+        };
+
+        // Dropdown change handlers
+        industryFilter.addEventListener('change', (e) => {
+            activeFilters.industry = e.target.value;
+            filterProjects();
+        });
+
+        technologyFilter.addEventListener('change', (e) => {
+            activeFilters.technology = e.target.value;
+            filterProjects();
+        });
+
+        typeFilter.addEventListener('change', (e) => {
+            activeFilters.type = e.target.value;
+            filterProjects();
+        });
+
+        // Clear filters button
+        clearFiltersBtn.addEventListener('click', () => {
+            activeFilters = {
+                industry: 'all',
+                technology: 'all',
+                type: 'all'
+            };
+            industryFilter.value = 'all';
+            technologyFilter.value = 'all';
+            typeFilter.value = 'all';
+            filterProjects();
+        });
+
+        function filterProjects() {
+            let visibleCount = 0;
+
+            projectCards.forEach(card => {
+                const cardIndustry = card.dataset.industry;
+                const cardTechnology = card.dataset.technology.split(' ');
+                const cardType = card.dataset.type;
+
+                // Check filters
+                const industryMatch = activeFilters.industry === 'all' || cardIndustry === activeFilters.industry;
+                const technologyMatch = activeFilters.technology === 'all' || cardTechnology.includes(activeFilters.technology);
+                const typeMatch = activeFilters.type === 'all' || cardType === activeFilters.type;
+
+                if (industryMatch && technologyMatch && typeMatch) {
+                    card.style.display = 'block';
+                    setTimeout(() => card.style.opacity = '1', 10);
+                    visibleCount++;
+                } else {
+                    card.style.opacity = '0';
+                    setTimeout(() => card.style.display = 'none', 300);
+                }
+            });
+
+            // Show/hide no results message
+            if (visibleCount === 0) {
+                noResults.style.display = 'flex';
+            } else {
+                noResults.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — Scientist Technologies</title>
+    <meta name="description"
+        content="Comprehensive AI services from strategy to deployment. Machine learning, NLP, computer vision, and more.">
+    <meta name="keywords"
+        content="AI services, machine learning, NLP, computer vision, AI consulting, AI development">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scientisttechnologies.uk/services">
+    <meta property="og:title" content="Services — Scientist Technologies">
+    <meta property="og:description"
+        content="Comprehensive AI services from strategy to deployment.">
+    <meta property="og:image" content="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://scientisttechnologies.uk/services">
+    <meta property="twitter:title" content="Services — Scientist Technologies">
+    <meta property="twitter:description"
+        content="Comprehensive AI services from strategy to deployment.">
+    <meta property="twitter:image" content="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/avif" href="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" id="navLogo">
+                <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo" class="logo-img">
+            </a>
+            <nav class="nav-links" id="navLinks">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link active">Services</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="team.html" class="nav-link">Team</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+</nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-icon sun">☀️</span>
+                        <span class="theme-toggle-icon moon">🌙</span>
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+                <button class="nav-cta" id="navCta">Get Started</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="products.html" class="mobile-nav-link">Products</a>
+            <a href="team.html" class="mobile-nav-link">Team</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero team-hero" id="services-hero">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="breadcrumb animate-on-scroll">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">→</span>
+                    <span>Services</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="title-line">Comprehensive AI</span>
+                    <span class="title-line gradient-text">Services</span>
+                    <span class="title-line">For Your Business</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    From strategy to deployment, we provide end-to-end AI solutions that transform your business and drive measurable results.
+                </p>
+            </div>
+        </section>
+
+        <!-- Service Categories Section -->
+        <section class="section service-categories-section" id="service-categories">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Service <span class="gradient-text">Offerings</span></h2>
+                    <p class="section-subtitle">Tailored AI solutions across strategy, development, integration, and analytics</p>
+                </div>
+
+                <div class="service-categories-stack">
+                    <!-- AI Strategy & Consulting -->
+                    <div class="service-category glass-card animate-on-scroll" id="ai-strategy-consulting">
+                        <div class="service-category-header">
+                            <div class="service-category-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M32 16V32L42 42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    <circle cx="32" cy="32" r="4" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>AI Strategy & Consulting</h3>
+                                <p class="service-category-subtitle">Strategic guidance to maximize your AI investment</p>
+                            </div>
+                        </div>
+                        <div class="service-category-content">
+                            <div class="service-offerings-grid">
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>AI Readiness Assessment</h4>
+                                        <p>Evaluate your organization's AI maturity, infrastructure, and data capabilities to identify opportunities and gaps.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Custom AI Solution Design</h4>
+                                        <p>Architect tailored AI solutions aligned with your business objectives, technical requirements, and industry standards.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Implementation Roadmap Development</h4>
+                                        <p>Create phased implementation plans with clear milestones, resource allocation, and risk mitigation strategies.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>ROI Modeling & Optimization</h4>
+                                        <p>Quantify expected returns, optimize resource allocation, and establish KPIs to measure AI initiative success.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Custom AI Development -->
+                    <div class="service-category glass-card animate-on-scroll" id="custom-ai-development">
+                        <div class="service-category-header">
+                            <div class="service-category-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="12" y="12" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M20 28L28 36L44 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Custom AI Development</h3>
+                                <p class="service-category-subtitle">Build intelligent systems tailored to your needs</p>
+                            </div>
+                        </div>
+                        <div class="service-category-content">
+                            <div class="service-offerings-grid">
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Machine Learning Model Development</h4>
+                                        <p>Design and train custom ML models for classification, regression, clustering, and recommendation systems.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Computer Vision Solutions</h4>
+                                        <p>Object detection, image segmentation, facial recognition, and real-time video analytics for visual intelligence.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Natural Language Processing</h4>
+                                        <p>Text analysis, sentiment detection, chatbots, language translation, and document understanding systems.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Predictive Analytics Systems</h4>
+                                        <p>Forecasting models, anomaly detection, and predictive maintenance solutions for data-driven decision making.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Integration Services -->
+                    <div class="service-category glass-card animate-on-scroll" id="ai-integration-services">
+                        <div class="service-category-header">
+                            <div class="service-category-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="32" r="8" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="44" cy="32" r="8" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="28" y1="32" x2="36" y2="32" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>AI Integration Services</h3>
+                                <p class="service-category-subtitle">Seamlessly integrate AI into your existing systems</p>
+                            </div>
+                        </div>
+                        <div class="service-category-content">
+                            <div class="service-offerings-grid">
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>API Development & Integration</h4>
+                                        <p>Build robust APIs and integrate AI capabilities into your existing applications and workflows.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>AI Module Deployment</h4>
+                                        <p>Deploy AI modules into existing applications with minimal disruption and maximum compatibility.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Cloud AI Infrastructure Setup</h4>
+                                        <p>Configure scalable cloud infrastructure on AWS, Azure, or GCP for optimal AI workload performance.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Performance Monitoring & Optimization</h4>
+                                        <p>Continuous monitoring, performance tuning, and optimization to ensure peak AI system efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Science & Analytics -->
+                    <div class="service-category glass-card animate-on-scroll" id="data-science-analytics">
+                        <div class="service-category-header">
+                            <div class="service-category-icon">
+                                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 48L24 32L32 40L40 24L48 36L56 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="24" cy="32" r="3" fill="currentColor"/>
+                                    <circle cx="32" cy="40" r="3" fill="currentColor"/>
+                                    <circle cx="40" cy="24" r="3" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3>Data Science & Analytics</h3>
+                                <p class="service-category-subtitle">Transform data into actionable insights</p>
+                            </div>
+                        </div>
+                        <div class="service-category-content">
+                            <div class="service-offerings-grid">
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Data Pipeline Development</h4>
+                                        <p>Build automated ETL pipelines for data collection, transformation, and loading at scale.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Advanced Analytics & Visualization</h4>
+                                        <p>Create interactive dashboards and visual analytics for deep insights and data storytelling.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Big Data Processing</h4>
+                                        <p>Process and analyze massive datasets using distributed computing frameworks and modern data architectures.</p>
+                                    </div>
+                                </div>
+                                <div class="service-offering-item">
+                                    <div class="offering-icon">✓</div>
+                                    <div>
+                                        <h4>Business Intelligence Solutions</h4>
+                                        <p>Implement BI platforms that deliver real-time insights and support strategic decision-making.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack Section -->
+        <section class="section tech-stack-section" id="tech-stack">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 class="section-title">Technology <span class="gradient-text">Stack</span></h2>
+                    <p class="section-subtitle">Cutting-edge frameworks and platforms we leverage to build world-class AI solutions</p>
+                </div>
+
+                <div class="tech-stack-grid">
+                    <!-- ML Frameworks -->
+                    <div class="tech-stack-category glass-card animate-on-scroll">
+                        <h3>ML Frameworks & Libraries</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Keras</span>
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">LightGBM</span>
+                            <span class="tech-tag">Hugging Face</span>
+                            <span class="tech-tag">spaCy</span>
+                        </div>
+                    </div>
+
+                    <!-- AI APIs -->
+                    <div class="tech-stack-category glass-card animate-on-scroll">
+                        <h3>AI APIs & Services</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">OpenAI GPT</span>
+                            <span class="tech-tag">Anthropic Claude</span>
+                            <span class="tech-tag">Google AI</span>
+                            <span class="tech-tag">AWS SageMaker</span>
+                            <span class="tech-tag">Azure AI</span>
+                            <span class="tech-tag">Vertex AI</span>
+                            <span class="tech-tag">Cohere</span>
+                            <span class="tech-tag">Stability AI</span>
+                        </div>
+                    </div>
+
+                    <!-- Cloud Platforms -->
+                    <div class="tech-stack-category glass-card animate-on-scroll">
+                        <h3>Cloud Platforms</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Microsoft Azure</span>
+                            <span class="tech-tag">Google Cloud Platform</span>
+                            <span class="tech-tag">IBM Cloud</span>
+                            <span class="tech-tag">DigitalOcean</span>
+                            <span class="tech-tag">Heroku</span>
+                        </div>
+                    </div>
+
+                    <!-- MLOps & Deployment -->
+                    <div class="tech-stack-category glass-card animate-on-scroll">
+                        <h3>MLOps & Deployment</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">Kubeflow</span>
+                            <span class="tech-tag">Airflow</span>
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">GitLab CI/CD</span>
+                            <span class="tech-tag">Weights & Biases</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Processing -->
+                    <div class="tech-stack-category glass-card animate-on-scroll">
+                        <h3>Data Processing & Storage</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Apache Spark</span>
+                            <span class="tech-tag">Hadoop</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Elasticsearch</span>
+                            <span class="tech-tag">Snowflake</span>
+                            <span class="tech-tag">BigQuery</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <!-- <div class="tech-stack-category glass-card animate-on-scroll">
+                        <h3>Programming Languages</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">R</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Go</span>
+                            <span class="tech-tag">Scala</span>
+                            <span class="tech-tag">C++</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section" id="services-cta">
+            <div class="container">
+                <div class="cta-card glass-card animate-on-scroll">
+                    <h2>Ready to Transform Your Business with AI?</h2>
+                    <p>Let's discuss how our AI services can drive innovation and growth for your organization.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">
+                            <span>Get Started</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="about.html" class="btn btn-ghost">
+                            <span>Learn More About Us</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo"
+                            class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Pioneering AI solutions since 2016. Building a smarter future, one
+                        algorithm at a time.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Solutions</h4>
+                        <a href="services.html">Machine Learning</a>
+                        <a href="services.html">Natural Language Processing</a>
+                        <a href="services.html">Computer Vision</a>
+                        <a href="services.html">AI Deployment</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="team.html">Team</a>
+                        <a href="#">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2016–2026 Scientist Technologies.uk — All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot (Available on all pages) -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div>
+                    <h4>AI Assistant</h4>
+                    <span class="chatbot-status">Online</span>
+                </div>
+            </div>
+            <div class="chatbot-actions">
+                <button class="chatbot-minimize" id="chatbotMinimize" aria-label="Minimize chat">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 10H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M5 5L15 15M5 15L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="chatbot-body" id="chatBody">
+            <div class="chat-msg bot">
+                <div class="msg-content">Hello! 👋 I'm here to help you with any questions about our AI services. How can I assist you today?</div>
+                <span class="msg-time">Just now</span>
+            </div>
+            <div class="chat-suggestions">
+                <button class="suggestion-chip">Tell me about your services</button>
+                <button class="suggestion-chip">How can AI help my business?</button>
+                <button class="suggestion-chip">Request a consultation</button>
+            </div>
+        </div>
+        <form class="chatbot-input" id="chatForm">
+            <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off">
+            <button type="submit" aria-label="Send message">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M2 10L18 2L10 18L8 11L2 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
+            <circle cx="12" cy="10" r="1.5" fill="currentColor"/>
+            <circle cx="8" cy="10" r="1.5" fill="currentColor"/>
+            <circle cx="16" cy="10" r="1.5" fill="currentColor"/>
+        </svg>
+        <span class="chatbot-badge">1</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

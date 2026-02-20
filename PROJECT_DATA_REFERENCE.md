@@ -1,0 +1,185 @@
+# Project Data Reference for Case Studies
+
+Copy the template from case-study.html and replace the data with these values for each project.
+
+## Project 2: Fraud Detection
+- **ID**: `fraud-detection`
+- **Title**: Real-Time Fraud Detection System
+- **Subtitle**: Protecting Financial Transactions with Machine Learning
+- **Metrics**:
+  - 🛡️ Fraud Reduction: 78%
+  - ⚡ Response Time: <100ms
+  - 💳 Transactions/Day: 10M+
+- **Client**: Major Financial Institution
+- **Industry**: Finance
+- **Duration**: 6 months
+- **Team**: 5 engineers
+- **Technologies**: Scikit-learn, XGBoost, Apache Kafka, Real-time ML
+- **Problem**: The financial institution was losing millions annually to fraudulent transactions with high false positive rates causing customer friction.
+- **Pain Points**:
+  - Annual fraud losses exceeding $50M
+  - High false positive rate (15%) causing customer friction
+  - Rule-based system unable to detect new fraud patterns
+  - Manual review process taking 24-48 hours
+- **Solution**: Built a real-time machine learning system using ensemble methods and anomaly detection processing transactions in under 100ms.
+- **Results**:
+  - Fraud Detection Rate: 65% → 92% (+27%)
+  - False Positive Rate: 15% → 3% (-80%)
+  - Annual Savings: $0 → $39M (+$39M)
+- **Impact**: Reduced fraud losses by 78% while improving customer experience through 80% reduction in false positives.
+
+## Project 3: Recommendation System
+- **ID**: `recommendation-system`
+- **Title**: Personalized Recommendation Engine
+- **Subtitle**: Driving E-commerce Growth with AI
+- **Metrics**:
+  - 📈 Conversion Rate: +45%
+  - 💰 Revenue Increase: +32%
+  - 👤 User Engagement: +67%
+- **Client**: Leading E-commerce Platform
+- **Industry**: Retail
+- **Duration**: 5 months
+- **Team**: 4 engineers
+- **Technologies**: Collaborative Filtering, NLP, Deep Learning, Apache Spark
+- **Problem**: The e-commerce platform had generic product recommendations that didn't resonate with users, leading to low conversion rates.
+- **Pain Points**:
+  - Generic recommendations with low click-through rates
+  - Poor personalization leading to cart abandonment
+  - Inability to handle cold-start problem for new users
+  - Slow recommendation generation affecting page load times
+- **Solution**: Implemented a hybrid recommendation system combining collaborative filtering, content-based filtering, and deep learning for real-time personalized recommendations.
+- **Results**:
+  - Click-Through Rate: 2.1% → 5.8% (+176%)
+  - Conversion Rate: 1.8% → 2.6% (+45%)
+  - Average Order Value: $45 → $62 (+38%)
+- **Impact**: Increased revenue by 32% through personalized recommendations. User engagement improved by 67%.
+
+## Project 4: Urban Traffic
+- **ID**: `urban-traffic`
+- **Title**: Urban Traffic Optimization
+- **Subtitle**: Smart City Solutions with Computer Vision
+- **Metrics**:
+  - 🚦 Congestion Reduced: 35%
+  - ⏰ Travel Time Saved: 22%
+  - 🛣️ Intersections: 150+
+- **Client**: Metropolitan City Council
+- **Industry**: Transportation
+- **Duration**: 10 months
+- **Team**: 8 engineers
+- **Technologies**: Computer Vision, YOLO, Edge Computing, IoT
+- **Problem**: The city faced severe traffic congestion with outdated fixed-timing traffic signals that couldn't adapt to real-time conditions.
+- **Pain Points**:
+  - Fixed traffic signal timing causing unnecessary delays
+  - No real-time visibility into traffic conditions
+  - High accident rates at busy intersections
+  - Inability to respond to incidents quickly
+- **Solution**: Deployed computer vision system at 150+ intersections using edge computing for real-time vehicle detection and adaptive traffic signal control.
+- **Results**:
+  - Traffic Congestion: 100% → 65% (-35%)
+  - Average Travel Time: 45 min → 35 min (-22%)
+  - Accident Rate: 12/month → 7/month (-42%)
+- **Impact**: Reduced traffic congestion by 35% and saved commuters an average of 10 minutes per trip across 150+ intersections.
+
+## Project 5: Medical NLP
+- **ID**: `medical-nlp`
+- **Title**: Medical Records NLP System
+- **Subtitle**: Automating Clinical Documentation with NLP
+- **Metrics**:
+  - ⏱️ Time Saved: 70%
+  - ✓ Accuracy: 93%
+  - 📄 Records Processed: 1M+
+- **Client**: Healthcare Provider Network
+- **Industry**: Healthcare
+- **Duration**: 7 months
+- **Team**: 5 engineers
+- **Technologies**: NLP, BERT, Named Entity Recognition, Python
+- **Problem**: Healthcare providers spent hours manually extracting and coding information from unstructured medical records.
+- **Pain Points**:
+  - Manual data extraction taking 30+ minutes per record
+  - High error rates in medical coding
+  - Delayed insurance claims processing
+  - Inconsistent data quality across facilities
+- **Solution**: Built an NLP system using transformer models to automatically extract medical entities, diagnoses, procedures, and medications from clinical notes.
+- **Results**:
+  - Processing Time: 30 min → 9 min (-70%)
+  - Coding Accuracy: 85% → 93% (+8%)
+  - Claims Processing: 14 days → 3 days (-79%)
+- **Impact**: Processed over 1 million medical records with 93% accuracy, saving clinicians 70% of documentation time.
+
+## Project 6: Quality Control
+- **ID**: `quality-control`
+- **Title**: Automated Quality Control Vision
+- **Subtitle**: Manufacturing Excellence with Computer Vision
+- **Metrics**:
+  - 🔍 Defect Detection: 99.2%
+  - ⚡ Inspection Speed: 10x
+  - 💰 Cost Savings: $2.5M
+- **Client**: Automotive Manufacturer
+- **Industry**: Manufacturing
+- **Duration**: 9 months
+- **Team**: 6 engineers
+- **Technologies**: Computer Vision, Deep Learning, Edge AI, PyTorch
+- **Problem**: Manual quality inspection was slow, inconsistent, and couldn't keep up with production speeds.
+- **Pain Points**:
+  - Manual inspection bottleneck slowing production
+  - Inconsistent defect detection across shifts
+  - High false negative rate (missed defects)
+  - Costly product recalls due to quality issues
+- **Solution**: Deployed computer vision system with deep learning models for automated defect detection at production speed.
+- **Results**:
+  - Defect Detection Rate: 92% → 99.2% (+7.2%)
+  - Inspection Time: 30 sec → 3 sec (-90%)
+  - Annual Savings: $0 → $2.5M (+$2.5M)
+- **Impact**: Achieved 99.2% defect detection accuracy while inspecting products 10x faster, saving $2.5M annually.
+
+## Project 7: Sentiment Analysis
+- **ID**: `sentiment-analysis`
+- **Title**: Social Media Sentiment Analysis
+- **Subtitle**: Market Intelligence with NLP
+- **Metrics**:
+  - 🎯 Accuracy: 91%
+  - 📊 Posts Analyzed: 5M/day
+  - 🌍 Languages: 12
+- **Client**: Investment Firm
+- **Industry**: Finance
+- **Duration**: 6 months
+- **Team**: 5 engineers
+- **Technologies**: NLP, Transformers, Apache Spark, Real-time Analytics
+- **Problem**: The investment firm needed real-time market sentiment analysis from social media to inform trading decisions.
+- **Pain Points**:
+  - Overwhelming volume of social media data
+  - Inability to detect sentiment shifts in real-time
+  - Missing critical market-moving information
+  - No multilingual sentiment analysis capability
+- **Solution**: Built a real-time sentiment analysis platform using transformer models processing millions of posts daily across 12 languages.
+- **Results**:
+  - Sentiment Accuracy: 75% → 91% (+16%)
+  - Detection Speed: 2 hours → 5 min (-96%)
+  - Trading Alpha: 0% → 12% (+12%)
+- **Impact**: Analyzes 5 million social media posts daily across 12 languages, contributing to 12% trading alpha.
+
+## Project 8: Smart Checkout
+- **ID**: `smart-checkout`
+- **Title**: Smart Checkout System
+- **Subtitle**: Cashier-less Retail with Computer Vision
+- **Metrics**:
+  - ⏱️ Wait Time Reduced: 60%
+  - ✓ Accuracy: 98%
+  - 😊 Customer Satisfaction: +85%
+- **Client**: Retail Chain
+- **Industry**: Retail
+- **Duration**: 8 months
+- **Team**: 7 engineers
+- **Technologies**: Computer Vision, Deep Learning, Edge Computing, IoT
+- **Problem**: Long checkout lines were causing customer frustration and lost sales during peak hours.
+- **Pain Points**:
+  - Average checkout wait time of 8 minutes
+  - Lost sales due to abandoned carts
+  - High labor costs for checkout staff
+  - Poor customer experience during peak hours
+- **Solution**: Implemented a cashier-less checkout system using computer vision and weight sensors with automatic billing through mobile app.
+- **Results**:
+  - Checkout Time: 8 min → 3 min (-60%)
+  - Product Recognition: N/A → 98% (98%)
+  - Customer Satisfaction: 65% → 92% (+27%)
+- **Impact**: Reduced checkout wait times by 60% and improved customer satisfaction by 85% across 15 stores.

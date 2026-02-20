@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products — Scientist Technologies</title>
+    <meta name="description"
+        content="Explore innovative AI products by Scientist Technologies. Urban AI and more cutting-edge solutions.">
+    <meta name="keywords"
+        content="AI products, Urban AI, traffic monitoring, AI solutions, Scientist Technologies products">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://scientisttechnologies.uk/products">
+    <meta property="og:title" content="Our Products — Scientist Technologies">
+    <meta property="og:description"
+        content="Explore innovative AI products by Scientist Technologies.">
+    <meta property="og:image" content="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://scientisttechnologies.uk/products">
+    <meta property="twitter:title" content="Our Products — Scientist Technologies">
+    <meta property="twitter:description"
+        content="Explore innovative AI products by Scientist Technologies.">
+    <meta property="twitter:image" content="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/avif" href="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" id="navLogo">
+                <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo" class="logo-img">
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-icon sun">☀️</span>
+                        <span class="theme-toggle-icon moon">🌙</span>
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+                <button class="nav-cta" id="navCta">Get Started</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="products.html" class="mobile-nav-link">Products</a>
+            <a href="team.html" class="mobile-nav-link">Team</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero team-hero" id="products-hero">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="breadcrumb animate-on-scroll">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">→</span>
+                    <span>Products</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="title-line">Innovative AI</span>
+                    <span class="title-line gradient-text">Products</span>
+                    <span class="title-line">Transforming Industries</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    Cutting-edge AI solutions designed to solve real-world challenges and drive meaningful impact.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Product: Urban AI -->
+        <section class="section featured-product-section" id="urban-ai">
+            <div class="container">
+                <!-- Hero-style Product Banner -->
+                <div class="product-hero-banner animate-on-scroll">
+                    <div class="product-hero-bg">
+                        <img src="urban-ai-background-2.avif" alt="Urban AI - Transport Intelligence" class="product-bg-image">
+                        <div class="product-hero-overlay"></div>
+                    </div>
+                    <div class="product-hero-content">
+                        <!-- TODO: Add Urban AI logo file here when available -->
+                        <img src="Asset 9_4x12.avif" alt="Urban AI Logo" class="product-hero-logo">
+
+                        <h2 class="product-hero-title">Transport Intelligence</h2>
+                        <p class="product-hero-subtitle">for Rapidly Growing Cities</p>
+                        <a href="http://www.geturbanai.com" target="_blank" rel="noopener" class="btn btn-primary">Know More</a>
+                        <p class="product-attribution">*Urban AI is a product of Scientist Technologies</p>
+                    </div>
+                </div>
+
+                <!-- Product Details Grid -->
+                <div class="featured-product-wrapper">
+                    <!-- Product Details Column -->
+                    <div class="product-details animate-on-scroll">
+                        <!-- <h2 class="product-name">Urban AI</h2> -->
+                        <!-- <p class="product-tagline">Redefining Infrastructure Safety using AI</p> -->
+                        <!-- <p class="product-description ">
+                            Urban AI leverages cutting-edge artificial intelligence and computer vision to revolutionize 
+                            traffic monitoring and infrastructure safety. Our platform provides real-time insights, 
+                            predictive analytics, and automated safety assessments for smart cities and transportation networks.
+                        </p> -->
+
+                        <!-- Key Features -->
+                        <div class="product-features-list">
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Real-time traffic monitoring and analysis</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>AI-powered safety incident detection</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Infrastructure condition assessment</span>
+                            </div>
+                            <div class="feature-item">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Predictive analytics and insights</span>
+                            </div>
+                            
+                        </div>
+                        
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Highlights Section -->
+        <section class="section product-highlights-section">
+            <div class="container">
+                
+                <div class="product-highlights-grid">
+                    <!-- Problem It Solves -->
+                    <div class="highlight-card glass-card animate-on-scroll">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="32" r="24" stroke="currentColor" stroke-width="2"/>
+                                <path d="M32 24V32L38 38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Problem It Solves</h3>
+                        <p>Traditional traffic monitoring is manual, time-consuming, and prone to errors. Urban AI automates infrastructure safety assessment, providing accurate, real-time insights for better decision-making.</p>
+                    </div>
+
+                    <!-- Who It's For -->
+                    <div class="highlight-card glass-card animate-on-scroll">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="32" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 48C16 40 22 36 32 36C42 36 48 40 48 48" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Who It's For</h3>
+                        <p>City planners, transportation authorities, traffic consultants, and municipalities looking to enhance urban safety and optimize infrastructure management with AI-powered insights.</p>
+                    </div>
+
+                    <!-- Key Benefits -->
+                    <div class="highlight-card glass-card animate-on-scroll">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 40L24 32L32 36L40 28L48 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="48" cy="32" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3>Key Benefits</h3>
+                        <p>Reduce manual monitoring costs by 70%, improve safety incident detection accuracy to 95%+, and enable proactive infrastructure maintenance with predictive analytics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon Section -->
+        <section class="section coming-soon-section">
+            <div class="container">
+                <div class="coming-soon-content animate-on-scroll">
+                    <div class="coming-soon-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="12" y="12" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 24V32L38 38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="32" cy="32" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h2>More Innovative Products Coming Soon</h2>
+                    <p>We're constantly developing new AI solutions to address emerging challenges across industries. Stay tuned for exciting announcements.</p>
+                    <a href="contact.html" class="btn btn-ghost">Get Notified</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <!-- <section class="section cta-section">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2>Interested in Urban AI?</h2>
+                    <p>Discover how Urban AI can transform your city's infrastructure management and safety monitoring.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+                        <a href="contact.html" class="btn btn-ghost">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo"
+                            class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Pioneering AI solutions since 2016. Building a smarter future, one
+                        algorithm at a time.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Solutions</h4>
+                        <a href="services.html">Machine Learning</a>
+                        <a href="services.html">Natural Language Processing</a>
+                        <a href="services.html">Computer Vision</a>
+                        <a href="services.html">AI Deployment</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="team.html">Team</a>
+                        <a href="products.html">Products</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2016–2026 Scientist Technologies.uk — All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

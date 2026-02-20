@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies — Scientist Technologies</title>
+    <meta name="description" content="Explore detailed case studies of our AI and machine learning projects.">
+    <link rel="icon" type="image/avif" href="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <canvas id="particleCanvas"></canvas>
+    
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" id="navLogo">
+                <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo" class="logo-img">
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link" data-section="home">Home</a>
+                <a href="about.html" class="nav-link" data-section="about">About</a>
+                <a href="services.html" class="nav-link" data-section="services">Services</a>
+                <a href="projects.html" class="nav-link" data-section="projects">Projects</a>
+                <a href="team.html" class="nav-link" data-section="team">Team</a>
+                <a href="contact.html" class="nav-link" data-section="contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-toggle-track">
+                        <span class="theme-toggle-icon sun">☀️</span>
+                        <span class="theme-toggle-icon moon">🌙</span>
+                        <span class="theme-toggle-thumb"></span>
+                    </span>
+                </button>
+                <button class="nav-cta" id="navCta">Get Started</button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="team.html" class="mobile-nav-link">Team</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="hero case-study-hero">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+                <div class="hero-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
+                    <div class="orb orb-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="breadcrumb animate-on-scroll">
+                    <a href="index.html">Home</a>
+                    <span class="breadcrumb-separator">→</span>
+                    <a href="projects.html">Projects</a>
+                    <span class="breadcrumb-separator">→</span>
+                    <span>Case Studies</span>
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="title-line">Our Success</span>
+                    <span class="title-line gradient-text">Stories</span>
+                </h1>
+                <p class="hero-subtitle animate-on-scroll">
+                    Explore how we've helped businesses transform with AI and machine learning solutions.
+                </p>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="section case-study-overview" id="ai-diagnostic">
+            <div class="container">
+                <!-- Project Header -->
+                <div class="case-study-header animate-on-scroll">
+                    <h2 class="case-study-title">AI-Powered Medical Diagnostics</h2>
+                    <p class="case-study-subtitle">Revolutionizing Healthcare with Deep Learning</p>
+                </div>
+
+                <!-- Key Metrics -->
+                <div class="hero-metrics animate-on-scroll">
+                    <div class="metric-card glass-card">
+                        <div class="metric-icon">🎯</div>
+                        <div class="metric-value">95%</div>
+                        <div class="metric-label">Accuracy</div>
+                    </div>
+                    <div class="metric-card glass-card">
+                        <div class="metric-icon">⏱️</div>
+                        <div class="metric-value">60%</div>
+                        <div class="metric-label">Time Saved</div>
+                    </div>
+                    <div class="metric-card glass-card">
+                        <div class="metric-icon">👥</div>
+                        <div class="metric-value">50K+</div>
+                        <div class="metric-label">Patients Served</div>
+                    </div>
+                </div>
+
+                <!-- Quick Summary -->
+                <div class="summary-grid animate-on-scroll">
+                    <div class="summary-item">
+                        <span class="summary-label">Client</span>
+                        <span class="summary-value">Global Healthcare Network</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Industry</span>
+                        <span class="summary-value">Healthcare</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Technologies</span>
+                        <span class="summary-value tech-list">
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">PyTorch</span>
+                            <span class="tech-badge">Computer Vision</span>
+                            <span class="tech-badge">Deep Learning</span>
+                        </span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Duration</span>
+                        <span class="summary-value">8 months</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Team Size</span>
+                        <span class="summary-value">6 engineers</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="section case-study-problem">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">The Challenge</span>
+                    <h3 class="section-title">Problem <span class="gradient-text">Statement</span></h3>
+                </div>
+                <div class="problem-content">
+                    <div class="problem-text animate-on-scroll">
+                        <p>Medical imaging analysis was time-consuming and prone to human error, with radiologists spending 2-3 hours per case. The healthcare network faced a critical shortage of specialized radiologists while dealing with increasing patient volumes.</p>
+                        <ul class="pain-points">
+                            <li>Manual analysis taking 2-3 hours per case</li>
+                            <li>High false negative rates in early detection</li>
+                            <li>Shortage of specialized radiologists</li>
+                            <li>Inconsistent diagnostic quality across facilities</li>
+                        </ul>
+                    </div>
+                    <div class="problem-visual animate-on-scroll">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="100" cy="100" r="80" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                            <path d="M100 60 L100 100 L140 100" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="100" cy="100" r="8" fill="currentColor"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="section case-study-solution">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">Our Approach</span>
+                    <h3 class="section-title">Solution & <span class="gradient-text">Implementation</span></h3>
+                </div>
+                <div class="solution-content">
+                    <div class="solution-text animate-on-scroll">
+                        <p class="solution-approach">We developed a deep learning system using convolutional neural networks trained on over 1 million medical images. The system provides real-time analysis with explainable AI features to assist radiologists in making faster, more accurate diagnoses.</p>
+                        
+                        <div class="solution-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🧠</div>
+                                <div class="highlight-content">
+                                    <h4>Deep Learning Architecture</h4>
+                                    <p>Custom CNN models optimized for medical imaging analysis</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">⚡</div>
+                                <div class="highlight-content">
+                                    <h4>Real-time Processing</h4>
+                                    <p>Sub-second inference time for immediate diagnostic support</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">🔍</div>
+                                <div class="highlight-content">
+                                    <h4>Explainable AI</h4>
+                                    <p>Visual heatmaps showing model decision-making process</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-visual animate-on-scroll">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Neural network visualization -->
+                            <circle cx="40" cy="50" r="8" fill="currentColor" opacity="0.6"/>
+                            <circle cx="40" cy="100" r="8" fill="currentColor" opacity="0.6"/>
+                            <circle cx="40" cy="150" r="8" fill="currentColor" opacity="0.6"/>
+                            
+                            <circle cx="100" cy="35" r="8" fill="currentColor" opacity="0.7"/>
+                            <circle cx="100" cy="70" r="8" fill="currentColor" opacity="0.7"/>
+                            <circle cx="100" cy="100" r="8" fill="currentColor" opacity="0.7"/>
+                            <circle cx="100" cy="130" r="8" fill="currentColor" opacity="0.7"/>
+                            <circle cx="100" cy="165" r="8" fill="currentColor" opacity="0.7"/>
+                            
+                            <circle cx="160" cy="75" r="8" fill="#fed16b"/>
+                            <circle cx="160" cy="125" r="8" fill="#fed16b"/>
+                            
+                            <!-- Connections -->
+                            <line x1="48" y1="50" x2="92" y2="35" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+                            <line x1="48" y1="50" x2="92" y2="70" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+                            <line x1="48" y1="100" x2="92" y2="100" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+                            <line x1="48" y1="150" x2="92" y2="130" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+                            <line x1="48" y1="150" x2="92" y2="165" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+                            
+                            <line x1="108" y1="35" x2="152" y2="75" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                            <line x1="108" y1="70" x2="152" y2="75" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                            <line x1="108" y1="100" x2="152" y2="75" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                            <line x1="108" y1="130" x2="152" y2="125" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                            <line x1="108" y1="165" x2="152" y2="125" stroke="#fed16b" stroke-width="2" opacity="0.5"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="section case-study-results">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-tag">Impact</span>
+                    <h3 class="section-title">Results & <span class="gradient-text">Outcomes</span></h3>
+                </div>
+                <div class="results-grid">
+                    <div class="result-card glass-card animate-on-scroll">
+                        <div class="result-label">Diagnostic Accuracy</div>
+                        <div class="result-comparison">
+                            <span class="result-before">78%</span>
+                            <span class="result-arrow">→</span>
+                            <span class="result-after">95%</span>
+                        </div>
+                        <div class="result-improvement">+17% improvement</div>
+                    </div>
+                    <div class="result-card glass-card animate-on-scroll">
+                        <div class="result-label">Analysis Time</div>
+                        <div class="result-comparison">
+                            <span class="result-before">2.5 hrs</span>
+                            <span class="result-arrow">→</span>
+                            <span class="result-after">15 min</span>
+                        </div>
+                        <div class="result-improvement">-94% faster</div>
+                    </div>
+                    <div class="result-card glass-card animate-on-scroll">
+                        <div class="result-label">Cost per Diagnosis</div>
+                        <div class="result-comparison">
+                            <span class="result-before">$250</span>
+                            <span class="result-arrow">→</span>
+                            <span class="result-after">$50</span>
+                        </div>
+                        <div class="result-improvement">-80% cost reduction</div>
+                    </div>
+                </div>
+                <div class="results-impact animate-on-scroll">
+                    <p>Processed over 50,000 patient cases with 95% accuracy, reducing diagnostic time by 94% and enabling early detection of critical conditions. The system is now deployed across 20 healthcare facilities, serving millions of patients annually.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section case-study-cta">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Let's discuss how we can help you achieve similar results.</p>
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Start Your Project</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <img src="Asset 1_4x12ZDALQWSkillzRHover23454.avif" alt="Scientist Technologies Logo" class="logo-img">
+                    </a>
+                    <p class="footer-tagline">Pioneering AI solutions since 2016. Building a smarter future, one algorithm at a time.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Solutions</h4>
+                        <a href="services.html">Machine Learning</a>
+                        <a href="services.html">Natural Language Processing</a>
+                        <a href="services.html">Computer Vision</a>
+                        <a href="services.html">AI Deployment</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="team.html">Team</a>
+                        <a href="#">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="projects.html">Case Studies</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2016–2026 Scientist Technologies.uk — All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

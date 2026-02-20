@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scientist Technologies — Innovate with Built-in AI | Since 2016</title>
+    <title>Scientist Technologies — Innovate with Built AI | Since 2016</title>
     <meta name="description"
         content="Scientist Technologies has been pioneering AI solutions since 2016. We build smarter futures with machine learning, NLP, computer vision, and ethical AI deployment.">
     <meta name="keywords"
@@ -13,7 +13,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://scientisttechnologies.uk/">
-    <meta property="og:title" content="Scientist Technologies — Innovate with Built-in AI">
+    <meta property="og:title" content="Scientist Technologies — Innovate with Built AI">
     <meta property="og:description"
         content="Pioneering AI solutions since 2016. We build smarter futures with machine learning, NLP, computer vision, and ethical AI deployment.">
     <meta property="og:image" content="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
@@ -21,7 +21,7 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://scientisttechnologies.uk/">
-    <meta property="twitter:title" content="Scientist Technologies — Innovate with Built-in AI">
+    <meta property="twitter:title" content="Scientist Technologies — Innovate with Built AI">
     <meta property="twitter:description"
         content="Pioneering AI solutions since 2016. Building a smarter future, one algorithm at a time.">
     <meta property="twitter:image" content="Asset 1_4x12ZDALQWSkillzRHover23454.avif">
@@ -33,10 +33,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    
+    <!-- Leaflet CSS for Interactive Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Leaflet JS for Interactive Maps -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <!-- Cursor Glow Effect -->
     <div class="cursor-glow" id="cursorGlow"></div>
 
@@ -51,13 +57,14 @@
                 <!-- <span class="logo-text">Scientist</span> -->
             </a>
             <nav class="nav-links" id="navLinks">
-                <a href="#home" class="nav-link active" data-section="home">Home</a>
-                <a href="#about" class="nav-link" data-section="about">About</a>
-                <a href="#services" class="nav-link" data-section="services">Services</a>
-                <a href="#approach" class="nav-link" data-section="approach">Approach</a>
-                <a href="#team" class="nav-link" data-section="team">Team</a>
-                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
-            </nav>
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="projects.html" class="nav-link">Projects</a>
+    <a href="products.html" class="nav-link">Products</a>
+    <a href="team.html" class="nav-link ">Team</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+</nav>
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
                     <span class="theme-toggle-track">
@@ -79,12 +86,13 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <nav class="mobile-nav-links">
-            <a href="#home" class="mobile-nav-link">Home</a>
-            <a href="#about" class="mobile-nav-link">About</a>
-            <a href="#services" class="mobile-nav-link">Services</a>
-            <a href="#approach" class="mobile-nav-link">Approach</a>
-            <a href="#team" class="mobile-nav-link">Team</a>
-            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="services.html" class="mobile-nav-link">Services</a>
+            <a href="projects.html" class="mobile-nav-link">Projects</a>
+            <a href="products.html" class="mobile-nav-link">Products</a>
+            <a href="team.html" class="mobile-nav-link">Team</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
         </nav>
     </div>
 
@@ -107,13 +115,13 @@
                         </video>
                     </div>
                     <div class="hero-text-container">
-                        <div class="hero-badge animate-on-scroll">
+                        <!-- <div class="hero-badge animate-on-scroll">
                             <span class="badge-dot"></span>
                             Pioneering AI Since 2016
-                        </div>
+                        </div> -->
                         <h1 class="hero-title animate-on-scroll">
                             <span class="title-line">Innovate with</span>
-                            <span class="title-line gradient-text">Built-in AI.</span>
+                            <span class="title-line gradient-text">Built AI.</span>
                             <span class="title-line">Build a Smarter</span>
                             <span class="title-line gradient-text">Future.</span>
                         </h1>
@@ -136,7 +144,7 @@
                         <span>Learn More</span>
                     </a>
                 </div>
-                <div class="hero-stats animate-on-scroll">
+                <!-- <div class="hero-stats animate-on-scroll">
                     <div class="stat-item">
                         <span class="stat-number" data-count="9">0</span>
                         <span class="stat-suffix">+</span>
@@ -154,56 +162,150 @@
                         <span class="stat-suffix">+</span>
                         <span class="stat-label">Global Clients</span>
                     </div>
-                </div>
+                </div> -->
             </div>
-            <div class="hero-scroll-indicator">
+            <!-- <div class="hero-scroll-indicator">
                 <div class="scroll-line"></div>
                 <span>Scroll</span>
-            </div>
+            </div> -->
         </section>
 
-        <!-- Marquee Ticker -->
+        <!-- Process Timeline Section -->
+        <!-- <section class="process-timeline-section">
+            <div class="container">
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-steps">
+                        <div class="timeline-step active">
+                            <div class="timeline-node">
+                                <div class="node-inner"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-label">Discover</h3>
+                                <p class="timeline-desc">Research & Analysis</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step active">
+                            <div class="timeline-node">
+                                <div class="node-inner"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-label">Design</h3>
+                                <p class="timeline-desc">Solution Architecture</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step active">
+                            <div class="timeline-node">
+                                <div class="node-inner"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-label">Build</h3>
+                                <p class="timeline-desc">Development</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step active">
+                            <div class="timeline-node">
+                                <div class="node-inner"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-label">Deploy</h3>
+                                <p class="timeline-desc">Launch & Integration</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-node">
+                                <div class="node-inner"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-label">Scale</h3>
+                                <p class="timeline-desc">Optimization & Growth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Technology Showcase Section -->
         <section class="marquee-section">
-            <div class="marquee-track">
-                <div class="marquee-content">
-                    <span class="marquee-item">Machine Learning</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Deep Learning</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Natural Language Processing</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Computer Vision</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Neural Networks</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Predictive Analytics</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">AI Ethics</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Generative AI</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Machine Learning</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Deep Learning</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Natural Language Processing</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Computer Vision</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Neural Networks</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Predictive Analytics</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">AI Ethics</span>
-                    <span class="marquee-dot">◆</span>
-                    <span class="marquee-item">Generative AI</span>
-                    <span class="marquee-dot">◆</span>
+            <div class="tech-logos-container">
+                <!-- Set 1: Languages & Frameworks -->
+                <div class="tech-logos-set active">
+                    <div class="tech-logo">
+                        <img src="python-logo-master-v3-TM.png" alt="Python">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="Typescript_logo_2020.svg.png" alt="TypeScript">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="Java_programming_language_logo.svg.png" alt="Java">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="Go_Logo_Blue.svg" alt="Go">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="React-icon.svg.png" alt="React">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="87-879058_formation-node-js-node-js-logo-vector.png" alt="Node.js">
+                    </div>
+                </div>
+                
+                <!-- Set 2: AI & ML Frameworks -->
+                <div class="tech-logos-set">
+                    <div class="tech-logo">
+                        <img src="tf_logo_social.png" alt="TensorFlow">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="Pytorch_logo.png" alt="PyTorch">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="django-logo-negative.1d528e2cb5fb.png" alt="Django">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="Postgresql_elephant.svg.png" alt="PostgreSQL">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="MongoDB_Logo.svg.png" alt="MongoDB">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="Git_icon.svg.png" alt="Git">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="Jupyter_logo.svg.png" alt="Jupyter">
+                    </div>
+                </div>
+                
+                <!-- Set 3: Cloud & DevOps -->
+                <div class="tech-logos-set">
+                    <div class="tech-logo">
+                        <img src="Amazon_Web_Services_Logo.svg.webp" alt="AWS">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="0_brH9cM9rnSRx2I-S.png" alt="Docker">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="logo-guide-logos-1.svg" alt="Kubernetes">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="bldh1dIdjXxpMz1uy1nxHHhwU9asyw2ZLqls5Ql7iKkCYwxYwUIgPktYTSZFlUxgZGKkvQIoRF7i_mmNVGqqgeFkucz-rAc-03K2jmW_ZCs.jpg" alt="Azure">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="ny45w3icu5mVUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw6sDDbz9ParSC0qsCjMCQ5JysoqLfRyzivPyPFI8wlOSzG1LM-pDHV1svCNd8709PZ3VSsGAKBkJw4" alt="Google Cloud">
+                    </div>
+                    <div class="tech-logo">
+                        <img src="python-logo-master-v3-TM.png" alt="Python">
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- About / Our Approach -->
-        <section class="section about-section" id="about">
+        <!-- <section class="section about-section" id="about">
             <div class="container">
                 <div class="section-header animate-on-scroll">
                     <span class="section-tag">About Us</span>
@@ -212,7 +314,7 @@
                         deliver transformative solutions.</p>
                 </div>
                 <div class="approach-grid">
-                    <div class="approach-card glass-card animate-on-scroll" id="approachCard1">
+                    <a href="about.html#problem-solvers" class="approach-card glass-card animate-on-scroll" id="approachCard1">
                         <div class="approach-icon">
                             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="24" cy="24" r="20" stroke="url(#grad1)" stroke-width="2" />
@@ -231,8 +333,8 @@
                         <h3>Problem Solvers, Future Shapers</h3>
                         <p>Leveraging cutting-edge AI to tackle complex challenges and create new opportunities for
                             businesses worldwide.</p>
-                    </div>
-                    <div class="approach-card glass-card animate-on-scroll" id="approachCard2">
+                    </a>
+                    <a href="about.html#data-driven" class="approach-card glass-card animate-on-scroll" id="approachCard2">
                         <div class="approach-icon">
                             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="8" y="8" width="32" height="32" rx="8" stroke="url(#grad2)" stroke-width="2" />
@@ -249,8 +351,8 @@
                         </div>
                         <h3>Data-Driven Excellence</h3>
                         <p>Combining cutting-edge AI to solve core business challenges and drive measurable results.</p>
-                    </div>
-                    <div class="approach-card glass-card animate-on-scroll" id="approachCard3">
+                    </a>
+                    <a href="about.html#scalable-systems" class="approach-card glass-card animate-on-scroll" id="approachCard3">
                         <div class="approach-icon">
                             <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M24 8L38 16V32L24 40L10 32V16L24 8Z" stroke="url(#grad3)" stroke-width="2" />
@@ -268,13 +370,13 @@
                         <h3>Scalable AI Systems</h3>
                         <p>Building robust, production-ready AI systems that grow with your business needs and adapt to
                             change.</p>
-                    </div>
+                    </a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Services Section -->
-        <section class="section services-section" id="services">
+        <!-- <section class="section services-section" id="services">
             <div class="container">
                 <div class="section-header animate-on-scroll">
                     <span class="section-tag">Our Expertise</span>
@@ -299,7 +401,7 @@
                             <h3>Machine Learning & Design</h3>
                             <p>Pattern recognition and predictive models that learn from data to deliver intelligent
                                 insights and automation.</p>
-                            <a href="#" class="service-link">Learn More →</a>
+                            <a href="services.html#custom-ai-development" class="service-link">Learn More →</a>
                         </div>
                         <div class="service-glow"></div>
                     </div>
@@ -321,7 +423,7 @@
                             <h3>Natural Language Processing</h3>
                             <p>Human understanding and predictive generation — contextual embeddings and linguistic
                                 analysis.</p>
-                            <a href="#" class="service-link">Learn More →</a>
+                            <a href="services.html#custom-ai-development" class="service-link">Learn More →</a>
                         </div>
                         <div class="service-glow"></div>
                     </div>
@@ -342,7 +444,7 @@
                             <h3>Computer Vision & Perception</h3>
                             <p>Image analysis, video processing, object detection, and real-time visual intelligence
                                 systems.</p>
-                            <a href="#" class="service-link">Learn More →</a>
+                            <a href="services.html#custom-ai-development" class="service-link">Learn More →</a>
                         </div>
                         <div class="service-glow"></div>
                     </div>
@@ -361,7 +463,7 @@
                             <h3>Network Vision & Reprocessing</h3>
                             <p>Real-time network optimization using AI-driven pattern detection and edge computing
                                 frameworks.</p>
-                            <a href="#" class="service-link">Learn More →</a>
+                            <a href="services.html#ai-integration-services" class="service-link">Learn More →</a>
                         </div>
                         <div class="service-glow"></div>
                     </div>
@@ -380,7 +482,7 @@
                             <h3>Generative AI Solutions</h3>
                             <p>Cutting-edge generative models for content creation, code synthesis, and creative AI
                                 applications.</p>
-                            <a href="#" class="service-link">Learn More →</a>
+                            <a href="services.html#custom-ai-development" class="service-link">Learn More →</a>
                         </div>
                         <div class="service-glow"></div>
                     </div>
@@ -398,17 +500,17 @@
                             <h3>AI Ethics & Deployment</h3>
                             <p>Responsible AI practices and scalable deployment strategies that ensure fairness,
                                 transparency, and reliability.</p>
-                            <a href="#" class="service-link">Learn More →</a>
+                            <a href="services.html#ai-integration-services" class="service-link">Learn More →</a>
                         </div>
                         <div class="service-glow"></div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
         <!-- Products Section -->
-        <section class="section product-section" id="products">
+        <!-- <section class="section product-section" id="products">
             <div class="container">
                 <div class="section-header animate-on-scroll">
                     <span class="section-tag">Our Products</span>
@@ -418,7 +520,7 @@
                 </div>
 
                 <div class="product-showcase animate-on-scroll">
-                    <!-- Product Info Side -->
+                   
                     <div class="product-info glass-card">
                         <div class="product-image-wrapper">
                             <img src="Urban_AI_image.avif" alt="Urban AI Logo" class="product-main-image">
@@ -439,7 +541,7 @@
                         </div>
                     </div>
 
-                    <!-- Carousel Side -->
+                    
                     <div class="product-carousel glass-card" id="urbanAiCarousel">
                         <div class="carousel-track-container">
                             <ul class="carousel-track">
@@ -455,8 +557,11 @@
                                     <div class="slide-caption">Vehicle Detection & Speed Processing</div>
                                 </li>
                                 <li class="carousel-slide">
-                                    <img src="Traffic flow.png" alt="Traffic Flow Analysis" class="carousel-content">
-                                    <div class="slide-caption">Traffic Flow Analysis</div>
+                                    <div class="deployment-map-container">
+                                        
+                                        <div id="indiaDeploymentMap" class="leaflet-map"></div>
+                                    </div>
+                                    <div class="slide-caption">Urban AI Deployment Map - India (Hover over pins)</div>
                                 </li>
                             </ul>
                         </div>
@@ -482,10 +587,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Success Stories / Case Studies -->
-        <section class="section stories-section" id="approach">
+        
+        <!-- <section class="section stories-section" id="approach">
             <div class="container">
                 <div class="section-header animate-on-scroll">
                     <span class="section-tag">Success Stories</span>
@@ -526,16 +631,19 @@
             </div>
         </section>
 
-        <!-- Team Section -->
+        
         <section class="section team-section" id="team">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <span class="section-tag">Our People</span>
-                    <h2 class="section-title">Meet Our <span class="gradient-text">Brilliant Minds</span></h2>
-                    <p class="section-subtitle">World-class researchers and engineers driving AI innovation.</p>
-                </div>
-                <div class="team-grid">
-                    <!-- Anurag Pyriyadarshi -->
+            <div class="team-sticky-wrapper">
+                <div class="team-content-wrapper">
+                    
+                    <div class="team-header-sticky">
+                        <div class="section-header">
+                            <span class="section-tag">Our People</span>
+                            <h2 class="section-title ">Meet Our <span class="gradient-text">Brilliant Minds</span></h2>
+                            <p class="section-subtitle">World-class researchers and engineers driving AI innovation.</p>
+                        </div>
+                    </div>
+                    <div class="team-cards-scroll">
                     <div class="team-card animate-on-scroll" id="teamCard1">
                         <div class="team-avatar">
                             <div class="avatar-ring"></div>
@@ -558,8 +666,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <!-- Syed Moula -->
                     <div class="team-card animate-on-scroll" id="teamCard2">
                         <div class="team-avatar">
                             <div class="avatar-ring"></div>
@@ -582,8 +688,28 @@
                             </a>
                         </div>
                     </div>
-
-                    <!-- Aditi Paul -->
+                     <div class="team-card animate-on-scroll" id="teamCard3">
+                        <div class="team-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-placeholder">
+                                <img src="Aditi_Image.jpg" alt="Aditi Paul" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                        <h3 class="team-name">Aditi Paul</h3>
+                        <p class="team-role">HR Manager</p>
+                        <p class="team-bio">Fostering a culture of innovation and building our world-class team of
+                            experts.</p>
+                        <div class="team-social">
+                            <a href="https://www.linkedin.com/in/aditi-paul-10002a196/" target="_blank"
+                                aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                     <div class="team-card animate-on-scroll" id="teamCard3">
                         <div class="team-avatar">
                             <div class="avatar-ring"></div>
@@ -606,11 +732,65 @@
                             </a>
                         </div>
                     </div>
+                    <div class="team-card animate-on-scroll" id="teamCard3">
+                        <div class="team-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-placeholder">
+                                <img src="Aditi_Image.jpg" alt="Aditi Paul" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                        <h3 class="team-name">Aditi Paul</h3>
+                        <p class="team-role">HR Manager</p>
+                        <p class="team-bio">Fostering a culture of innovation and building our world-class team of
+                            experts.</p>
+                        <div class="team-social">
+                            <a href="https://www.linkedin.com/in/aditi-paul-10002a196/" target="_blank"
+                                aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-card animate-on-scroll" id="teamCard3">
+                        <div class="team-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-placeholder">
+                                <img src="Aditi_Image.jpg" alt="Aditi Paul" loading="lazy"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                        <h3 class="team-name">Aditi Paul</h3>
+                        <p class="team-role">HR Manager</p>
+                        <p class="team-bio">Fostering a culture of innovation and building our world-class team of
+                            experts.</p>
+                        <div class="team-social">
+                            <a href="https://www.linkedin.com/in/aditi-paul-10002a196/" target="_blank"
+                                aria-label="LinkedIn" class="social-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                       
+                        <a href="team.html" class="btn btn-primary meet-team-btn">
+                            <span>Meet the Team</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section class="section contact-section" id="contact">
             <div class="container">
                 <div class="contact-wrapper">
@@ -708,72 +888,9 @@
                             </button>
                         </form>
                     </div>
-                </div>
+                </div> -->
                 <!-- Map Section -->
-                <div class="map-section animate-on-scroll" id="mapSection">
-                    <div class="map-header">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                            <circle cx="12" cy="10" r="3" />
-                        </svg>
-                        <span>Find Us on the Map</span>
-                    </div>
-                    <div class="map-container">
-                        <iframe id="contactMap"
-                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1944.38!2d77.60024652633318!3d12.912832831618095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!1s0x0%3A0x0!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Scientist Technologies - Awfis Mantri Commerce, Bengaluru">
-                        </iframe>
-                        <!-- Map Pin Marker -->
-                        <div class="map-pin-marker" id="mapPinMarker">
-                            <div class="map-pin-pulse"></div>
-                            <svg class="map-pin-icon" width="40" height="52" viewBox="0 0 40 52" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20 0C8.954 0 0 8.954 0 20c0 14 20 32 20 32s20-18 20-32C40 8.954 31.046 0 20 0z"
-                                    fill="url(#pinGradientMain)" />
-                                <circle cx="20" cy="20" r="9" fill="#222222" />
-                                <circle cx="20" cy="20" r="5" fill="white" />
-                                <defs>
-                                    <linearGradient id="pinGradientMain" x1="0" y1="0" x2="40" y2="52">
-                                        <stop stop-color="#fed16b" />
-                                        <stop offset="1" stop-color="#E6BC5C" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <!-- Map Overlay Card -->
-                        <div class="map-overlay-card glass-card">
-                            <div class="map-overlay-pin">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="url(#mapPinGrad)"
-                                        stroke="rgba(255,255,255,0.3)" stroke-width="1" />
-                                    <circle cx="12" cy="10" r="3" fill="white" />
-                                    <defs>
-                                        <linearGradient id="mapPinGrad" x1="3" y1="1" x2="21" y2="23">
-                                            <stop stop-color="#fed16b" />
-                                            <stop offset="1" stop-color="#E6BC5C" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                            </div>
-                            <h4 class="map-overlay-title">Scientist Technologies</h4>
-                            <p class="map-overlay-address">7th Floor, Mantri Commerce<br>Bannerghatta Road, BTM
-                                Layout<br>Bengaluru, Karnataka 560076</p>
-                            <a href="https://www.google.com/maps?q=12.912832831618095,77.60024652633318" target="_blank"
-                                rel="noopener noreferrer" class="map-overlay-link">
-                                <span>Get Directions</span>
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="7" y1="17" x2="17" y2="7" />
-                                    <polyline points="7 7 17 7 17 17" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
     </main>
