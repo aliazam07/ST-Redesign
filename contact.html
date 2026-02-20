@@ -293,65 +293,10 @@
     </footer>
 
     <!-- AI Chatbot (Only on Contact Page) -->
-    <div class="chatbot-container" id="chatbot">
-        <div class="chatbot-header">
-            <div class="chatbot-header-info">
-                <div class="chatbot-avatar">
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" fill="currentColor"/>
-                    </svg>
-                </div>
-                <div>
-                    <h4>AI Assistant</h4>
-                    <span class="chatbot-status">Online</span>
-                </div>
-            </div>
-            <div class="chatbot-actions">
-                <button class="chatbot-minimize" id="chatbotMinimize" aria-label="Minimize chat">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M5 10H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </button>
-                <button class="chatbot-close" id="chatbotClose" aria-label="Close chat">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M5 5L15 15M5 15L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="chatbot-body" id="chatBody">
-            <div class="chat-msg bot">
-                <div class="msg-content">Hello! 👋 I'm here to help you with any questions about our AI services. How can I assist you today?</div>
-                <span class="msg-time">Just now</span>
-            </div>
-            <div class="chat-suggestions">
-                <button class="suggestion-chip">Tell me about your services</button>
-                <button class="suggestion-chip">How can AI help my business?</button>
-                <button class="suggestion-chip">Request a consultation</button>
-            </div>
-        </div>
-        <form class="chatbot-input" id="chatForm">
-            <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off">
-            <button type="submit" aria-label="Send message">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M2 10L18 2L10 18L8 11L2 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-        </form>
-    </div>
-
-    <!-- Chatbot Toggle Button (Minimized State) -->
-    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Open chat">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
-            <circle cx="12" cy="10" r="1.5" fill="currentColor"/>
-            <circle cx="8" cy="10" r="1.5" fill="currentColor"/>
-            <circle cx="16" cy="10" r="1.5" fill="currentColor"/>
-        </svg>
-        <span class="chatbot-badge">1</span>
-    </button>
+    
 
     <script src="script.js"></script>
+    <script src="chatbot.js"></script>
 </body>
 
 </html>
